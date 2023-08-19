@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated core -->
+      <package
+            uri="ecore://nasdanika.org/models/togaf/core"
+            class="org.nasdanika.models.togaf.core.CorePackage"
+            genModel="model/core.genmodel"/>
+   </extension>
+
+</plugin>

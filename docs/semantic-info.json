@@ -1,0 +1,792 @@
+[
+    {
+        "identifiers": ["uuid:3fb3a376-1dd1-4f3c-a359-b7d854f42c5e"],
+        "name": "Nasdanika",
+        "icon": "https://docs.nasdanika.org/images/nasdanika-logo.png",
+        "location": "https://www.nasdanika.org",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "children",
+            "identifiers": ["uuid:3fb3a376-1dd1-4f3c-a359-b7d854f42c5e"]
+        },
+        "identifiers": ["uuid:94ec1e06-b80d-4764-9c6b-acbbeede6bca"],
+        "name": "Test Models Documentation",
+        "icon": "fa fa-book",
+        "location": "index.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "children",
+            "identifiers": ["uuid:3fb3a376-1dd1-4f3c-a359-b7d854f42c5e"]
+        },
+        "identifiers": ["uuid:0ed519f3-e6c4-4e8e-907c-287f64b4e495"],
+        "name": "Search",
+        "icon": "fas fa-search",
+        "location": "search.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "children",
+            "identifiers": ["uuid:3fb3a376-1dd1-4f3c-a359-b7d854f42c5e"]
+        },
+        "identifiers": ["uuid:291b9dcd-71be-408e-be2a-f6218b55e579"],
+        "name": "Glossary",
+        "icon": "fas fa-book",
+        "location": "glossary.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core"],
+        "name": "core",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif",
+        "location": "core/index.html",
+        "type": {
+            "name": "EPackage",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/ArchitectureBuildingBlock"],
+        "name": "ArchitectureBuildingBlock",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+        "description": "A reusable named concept, a capability",
+        "location": "core/references/eClassifiers/ArchitectureBuildingBlock/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:17f12563-aea3-4cc3-9208-498dbae49027"]
+        },
+        "identifiers": ["uuid:b5a66372-46c5-4284-a508-15c966c268ac"],
+        "name": "Inheritance",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif",
+        "location": "core/references/eClassifiers/ArchitectureBuildingBlock/inheritance.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "sections",
+            "identifiers": ["uuid:b5a66372-46c5-4284-a508-15c966c268ac"]
+        },
+        "identifiers": ["uuid:763f5f8b-df20-4687-ba02-41c0673751f0"],
+        "name": "Supertypes",
+        "location": "core/references/eClassifiers/ArchitectureBuildingBlock/inheritance.html#uuid-763f5f8b-df20-4687-ba02-41c0673751f0",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:17f12563-aea3-4cc3-9208-498dbae49027"]
+        },
+        "identifiers": ["uuid:041db1fe-8075-422a-949a-eef20b8f93d5"],
+        "name": "References",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif",
+        "location": "core/references/eClassifiers/ArchitectureBuildingBlock/references.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:17f12563-aea3-4cc3-9208-498dbae49027"]
+        },
+        "identifiers": ["uuid:264d2e41-2b0a-4ae5-8884-bf30d37dab3a"],
+        "name": "Diagram",
+        "icon": "fas fa-project-diagram",
+        "location": "core/references/eClassifiers/ArchitectureBuildingBlock/diagram.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:17f12563-aea3-4cc3-9208-498dbae49027"]
+        },
+        "identifiers": ["uuid:6781d95a-690a-4735-a65a-8e5fc4b06874"],
+        "name": "Load specification",
+        "location": "core/references/eClassifiers/ArchitectureBuildingBlock/load-specification.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/ArchitectureDomain"],
+        "name": "ArchitectureDomain",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+        "description": "Business, Data, Application, Technology (BDAT). There might be more doomains, e.g. security.",
+        "location": "core/references/eClassifiers/ArchitectureDomain/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:33fd7752-a2fa-46a7-90ba-948dd67d5655"]
+        },
+        "identifiers": ["uuid:b33ab629-7d76-4167-8be8-e75aa91311e3"],
+        "name": "Diagram",
+        "icon": "fas fa-project-diagram",
+        "location": "core/references/eClassifiers/ArchitectureDomain/diagram.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/ArchitectureWorkProduct"],
+        "name": "ArchitectureWorkProduct",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+        "location": "core/references/eClassifiers/ArchitectureWorkProduct/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:b08efca2-87ab-4f71-864b-cf1eb69ad34d"]
+        },
+        "identifiers": ["uuid:5099d7bc-c332-43e0-af11-edc556c87cde"],
+        "name": "Inheritance",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif",
+        "location": "core/references/eClassifiers/ArchitectureWorkProduct/inheritance.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "sections",
+            "identifiers": ["uuid:5099d7bc-c332-43e0-af11-edc556c87cde"]
+        },
+        "identifiers": ["uuid:b50b2610-b0c3-45f0-a42c-bbd4673d29bc"],
+        "name": "Subtypes",
+        "location": "core/references/eClassifiers/ArchitectureWorkProduct/inheritance.html#uuid-b50b2610-b0c3-45f0-a42c-bbd4673d29bc",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:b08efca2-87ab-4f71-864b-cf1eb69ad34d"]
+        },
+        "identifiers": ["uuid:596c4f29-fdec-44b7-8215-4435fde941de"],
+        "name": "Diagram",
+        "icon": "fas fa-project-diagram",
+        "location": "core/references/eClassifiers/ArchitectureWorkProduct/diagram.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/Artifact"],
+        "name": "Artifact",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+        "description": "An artifact describes an aspect of architecture. It can be used in multiple deliverables. An artifact can be a catalog, a matrix or a diagram showing some architecture elments and possibly relationships between them.",
+        "location": "core/references/eClassifiers/Artifact/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:81482792-3a38-4c14-bbe1-4872452115e2"]
+        },
+        "identifiers": ["uuid:143c1fb4-0e1a-4654-87e3-1f9cf4157195"],
+        "name": "Inheritance",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif",
+        "location": "core/references/eClassifiers/Artifact/inheritance.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "sections",
+            "identifiers": ["uuid:143c1fb4-0e1a-4654-87e3-1f9cf4157195"]
+        },
+        "identifiers": ["uuid:961b24e0-7766-491b-a621-9ddc1478e491"],
+        "name": "Supertypes",
+        "location": "core/references/eClassifiers/Artifact/inheritance.html#uuid-961b24e0-7766-491b-a621-9ddc1478e491",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:81482792-3a38-4c14-bbe1-4872452115e2"]
+        },
+        "identifiers": ["uuid:f0f68340-9f74-4b28-bda7-f3cd824bd912"],
+        "name": "Diagram",
+        "icon": "fas fa-project-diagram",
+        "location": "core/references/eClassifiers/Artifact/diagram.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/BuildingBlock"],
+        "name": "BuildingBlock",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+        "description": "A potentially reusable compoent",
+        "location": "core/references/eClassifiers/BuildingBlock/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:04d6b56f-03e6-4b53-b793-67f34957fa2d"]
+        },
+        "identifiers": ["uuid:4155c344-c8f1-488d-9611-186f7a910984"],
+        "name": "Inheritance",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif",
+        "location": "core/references/eClassifiers/BuildingBlock/inheritance.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "sections",
+            "identifiers": ["uuid:4155c344-c8f1-488d-9611-186f7a910984"]
+        },
+        "identifiers": ["uuid:42aabc66-a23f-42e0-8bc1-9095faead792"],
+        "name": "Supertypes",
+        "location": "core/references/eClassifiers/BuildingBlock/inheritance.html#uuid-42aabc66-a23f-42e0-8bc1-9095faead792",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "sections",
+            "identifiers": ["uuid:4155c344-c8f1-488d-9611-186f7a910984"]
+        },
+        "identifiers": ["uuid:03c26d78-c34c-4577-b423-1513587a6b46"],
+        "name": "Subtypes",
+        "location": "core/references/eClassifiers/BuildingBlock/inheritance.html#uuid-03c26d78-c34c-4577-b423-1513587a6b46",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:04d6b56f-03e6-4b53-b793-67f34957fa2d"]
+        },
+        "identifiers": ["uuid:cff032f8-7a32-4601-b190-969f8a19fcdf"],
+        "name": "References",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif",
+        "location": "core/references/eClassifiers/BuildingBlock/references.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eStructuralFeatures",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/BuildingBlock"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/BuildingBlock/eStructuralFeatures/specializes"],
+        "name": "specializes",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif",
+        "description": "A BB which this BB is a specialization of. For example \"Git version control\" is a specialization of \"Version Control\". TODO: Association class with quality attributes which can be used as criteria in decision analysis. A derived opposite \"specializations\".  Validations that ABB's specialize ABB's and SBB's specialize SBB's.",
+        "location": "core/references/eClassifiers/BuildingBlock/references/eStructuralFeatures/specializes/index.html",
+        "type": {
+            "name": "EReference",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:04d6b56f-03e6-4b53-b793-67f34957fa2d"]
+        },
+        "identifiers": ["uuid:58f1ae65-b006-4e7d-ac7d-aa25072156ac"],
+        "name": "Diagram",
+        "icon": "fas fa-project-diagram",
+        "location": "core/references/eClassifiers/BuildingBlock/diagram.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:04d6b56f-03e6-4b53-b793-67f34957fa2d"]
+        },
+        "identifiers": ["uuid:cbe72b5f-c7a1-4cb4-8761-4448cf6e2b6c"],
+        "name": "Load specification",
+        "location": "core/references/eClassifiers/BuildingBlock/load-specification.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/Deliverable"],
+        "name": "Deliverable",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+        "description": "Deliverables are contractually specified, formally reviewed, approved, and signed off by stakeholders.",
+        "location": "core/references/eClassifiers/Deliverable/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:0bd0834c-ee5c-4fad-8975-0a84fd933892"]
+        },
+        "identifiers": ["uuid:d1021a83-a60c-4475-8726-65dc1e6eef5c"],
+        "name": "Inheritance",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif",
+        "location": "core/references/eClassifiers/Deliverable/inheritance.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "sections",
+            "identifiers": ["uuid:d1021a83-a60c-4475-8726-65dc1e6eef5c"]
+        },
+        "identifiers": ["uuid:813895ec-f20b-42df-9446-99ffe191d44e"],
+        "name": "Supertypes",
+        "location": "core/references/eClassifiers/Deliverable/inheritance.html#uuid-813895ec-f20b-42df-9446-99ffe191d44e",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:0bd0834c-ee5c-4fad-8975-0a84fd933892"]
+        },
+        "identifiers": ["uuid:82f46335-7444-4928-93e9-805050de033e"],
+        "name": "References",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif",
+        "location": "core/references/eClassifiers/Deliverable/references.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eStructuralFeatures",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/Deliverable"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/Deliverable/eStructuralFeatures/signoffs"],
+        "name": "signoffs",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif",
+        "description": "Tracking of stakeholder interactions. TODO: a better name for the reference which is a generic for review/approval/signoff. A base association class and subclasses - Review, Approval, Signoff. Dates, comments etc for each.",
+        "location": "core/references/eClassifiers/Deliverable/references/eStructuralFeatures/signoffs/index.html",
+        "type": {
+            "name": "EReference",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eStructuralFeatures",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/Deliverable"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/Deliverable/eStructuralFeatures/uses"],
+        "name": "uses",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif",
+        "description": "A deliverable can use/reference zero or more artifacts. TODO: Derived opposite from artifacts to deliverables. Association class with a key and perhaps configuration/properties - an artifact can be a \"template\" or a pattern and its use is instantiation with given \"bindings\"",
+        "location": "core/references/eClassifiers/Deliverable/references/eStructuralFeatures/uses/index.html",
+        "type": {
+            "name": "EReference",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:0bd0834c-ee5c-4fad-8975-0a84fd933892"]
+        },
+        "identifiers": ["uuid:f644effd-ae56-47fb-8bb2-cffdc7e9ce07"],
+        "name": "Diagram",
+        "icon": "fas fa-project-diagram",
+        "location": "core/references/eClassifiers/Deliverable/diagram.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:0bd0834c-ee5c-4fad-8975-0a84fd933892"]
+        },
+        "identifiers": ["uuid:abac3cd2-9575-4214-9af0-e6fd8e0006f7"],
+        "name": "Load specification",
+        "location": "core/references/eClassifiers/Deliverable/load-specification.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/Enterprise"],
+        "name": "Enterprise",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+        "description": "Highest level of description for an organization",
+        "location": "core/references/eClassifiers/Enterprise/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:7c9c782d-6a0f-4d27-8839-986bd5e3b312"]
+        },
+        "identifiers": ["uuid:3e460176-4a71-4eae-8f5d-d848bce7299d"],
+        "name": "References",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif",
+        "location": "core/references/eClassifiers/Enterprise/references.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eStructuralFeatures",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/Enterprise"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/Enterprise/eStructuralFeatures/enterpriseContinuum"],
+        "name": "enterpriseContinuum",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif",
+        "description": "Root (most generic) entries of the enterprise continuum",
+        "location": "core/references/eClassifiers/Enterprise/references/eStructuralFeatures/enterpriseContinuum/index.html",
+        "type": {
+            "name": "EReference",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:7c9c782d-6a0f-4d27-8839-986bd5e3b312"]
+        },
+        "identifiers": ["uuid:558af8a8-a7b0-4577-a631-0dc4e57a1e86"],
+        "name": "Diagram",
+        "icon": "fas fa-project-diagram",
+        "location": "core/references/eClassifiers/Enterprise/diagram.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:7c9c782d-6a0f-4d27-8839-986bd5e3b312"]
+        },
+        "identifiers": ["uuid:e683d7c9-591e-481a-88b3-e267a5fed5c4"],
+        "name": "Load specification",
+        "location": "core/references/eClassifiers/Enterprise/load-specification.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/EnterpriseContinuumElement"],
+        "name": "EnterpriseContinuumElement",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+        "description": "An element of the enterprise continuum. Examples: Foundation Architectures, Common Systems Archtiectures, Industry Architectures, Organization-Specific Architectures (can be nested).",
+        "location": "core/references/eClassifiers/EnterpriseContinuumElement/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:7087c565-d7fa-45d0-8cc5-493aa1dda049"]
+        },
+        "identifiers": ["uuid:e0a95376-d1fa-4b4a-9cc8-9783d18aa393"],
+        "name": "References",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif",
+        "location": "core/references/eClassifiers/EnterpriseContinuumElement/references.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eStructuralFeatures",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/EnterpriseContinuumElement"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/EnterpriseContinuumElement/eStructuralFeatures/specializations"],
+        "name": "specializations",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif",
+        "description": "Specializations of this element. E.g. organization-specific archtiectures are specializations of industry archtectures",
+        "location": "core/references/eClassifiers/EnterpriseContinuumElement/references/eStructuralFeatures/specializations/index.html",
+        "type": {
+            "name": "EReference",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:7087c565-d7fa-45d0-8cc5-493aa1dda049"]
+        },
+        "identifiers": ["uuid:da060682-6bdf-46e5-aafb-11d5d7a25ef1"],
+        "name": "Diagram",
+        "icon": "fas fa-project-diagram",
+        "location": "core/references/eClassifiers/EnterpriseContinuumElement/diagram.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:7087c565-d7fa-45d0-8cc5-493aa1dda049"]
+        },
+        "identifiers": ["uuid:2bdeb693-75a5-42a8-a477-1118e72f35bc"],
+        "name": "Load specification",
+        "location": "core/references/eClassifiers/EnterpriseContinuumElement/load-specification.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/SolutionBuidingBlock"],
+        "name": "SolutionBuidingBlock",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+        "description": "Implementation of a capability",
+        "location": "core/references/eClassifiers/SolutionBuidingBlock/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:84c4a565-6479-4dc0-88d1-95644b2020e8"]
+        },
+        "identifiers": ["uuid:c6710626-0e2e-481c-979b-9d3d7b2159ac"],
+        "name": "Inheritance",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif",
+        "location": "core/references/eClassifiers/SolutionBuidingBlock/inheritance.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "sections",
+            "identifiers": ["uuid:c6710626-0e2e-481c-979b-9d3d7b2159ac"]
+        },
+        "identifiers": ["uuid:eb30344a-1a26-4eb4-82c6-90e9e020b6db"],
+        "name": "Supertypes",
+        "location": "core/references/eClassifiers/SolutionBuidingBlock/inheritance.html#uuid-eb30344a-1a26-4eb4-82c6-90e9e020b6db",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:84c4a565-6479-4dc0-88d1-95644b2020e8"]
+        },
+        "identifiers": ["uuid:66b55aff-b786-4f3d-affc-cd4908ca0074"],
+        "name": "References",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif",
+        "location": "core/references/eClassifiers/SolutionBuidingBlock/references.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eStructuralFeatures",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/SolutionBuidingBlock"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/SolutionBuidingBlock/eStructuralFeatures/implements"],
+        "name": "implements",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif",
+        "description": "Architecture building block (capability) implemented by this solution building block. One solution buidling block may implement more than one capability. E.g. GitLab implements GitRepository, issue management, CI/CD, etc. TODO: Association class with quality attributes and details, derived opposite.",
+        "location": "core/references/eClassifiers/SolutionBuidingBlock/references/eStructuralFeatures/implements/index.html",
+        "type": {
+            "name": "EReference",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:84c4a565-6479-4dc0-88d1-95644b2020e8"]
+        },
+        "identifiers": ["uuid:3ebef472-4d78-41f7-8c94-481eb9a2b62f"],
+        "name": "Diagram",
+        "icon": "fas fa-project-diagram",
+        "location": "core/references/eClassifiers/SolutionBuidingBlock/diagram.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:84c4a565-6479-4dc0-88d1-95644b2020e8"]
+        },
+        "identifiers": ["uuid:cdfe3a74-7d3a-4db7-9162-fda4b83ee3fe"],
+        "name": "Load specification",
+        "location": "core/references/eClassifiers/SolutionBuidingBlock/load-specification.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/models/togaf/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/models/togaf/core/eClassifiers/Stakeholder"],
+        "name": "Stakeholder",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+        "location": "core/references/eClassifiers/Stakeholder/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:657773d8-455e-4cc7-a2b6-8a3c935e306a"]
+        },
+        "identifiers": ["uuid:24b97486-3d01-415d-97d9-1e2584cb84c7"],
+        "name": "Diagram",
+        "icon": "fas fa-project-diagram",
+        "location": "core/references/eClassifiers/Stakeholder/diagram.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "navigation",
+            "identifiers": ["uuid:a8bfaffa-109c-41c7-9d48-5d74a5684c4a"]
+        },
+        "identifiers": ["uuid:d16c2a1f-47c0-42a2-acd2-1dc4fb9839f3"],
+        "name": "Classifiers",
+        "location": "core/classifiers.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    }
+]

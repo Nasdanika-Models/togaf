@@ -1,0 +1,40 @@
+bootstrap-page:
+  cdn: true
+  theme: Cerulean
+  name: Application Page Template
+  language: EN
+  stylesheets: 
+    - https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/css/app.css 
+    - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css
+    - https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/themes/default/style.min.css
+    - https://cdn.jsdelivr.net/npm/github-markdown-css@5.1.0/github-markdown.min.css
+    - https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css
+    - https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.css
+  scripts:
+    - https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/common.js 
+    - https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/dark-head.js 
+    - https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/jstree.min.js
+    - https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js
+    - https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js
+    - https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js
+    - https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/components/table.js
+    - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+#    - https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js 
+    - file:///C:/Users/Pavel/git-models/ecore/graph/web-resources/components/table.js
+  head:
+    # Google analytics
+    content-text: |+2    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BRJVLK8CC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-9BRJVLK8CC');
+      </script>    
+  body:
+    app-page:
+      fluid: true
+        
+ 

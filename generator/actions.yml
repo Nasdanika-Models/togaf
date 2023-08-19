@@ -1,0 +1,30 @@
+app-action:
+  icon: https://docs.nasdanika.org/images/nasdanika-logo.png
+  text: Nasdanika
+  location: https://www.nasdanika.org 
+  children:
+    - app-action:
+        icon: fa fa-book
+        text: Test Models Documentation
+        location: ${base-uri}index.html 
+        content:
+          content-text: TODO  
+        children:
+          - app-action-reference: "target/action-models/core.xmi#/"
+    - app-action:
+        location: ${base-uri}search.html
+        icon: fas fa-search
+        text: Search
+        content:
+          content-interpolator:
+            source:
+              content-resource: classpath://org/nasdanika/html/model/app/gen/search.html
+    - app-action:
+        location: ${base-uri}glossary.html
+        icon: fas fa-book
+        text: Glossary
+        content:
+          content-interpolator:
+            source:
+              content-resource: classpath://org/nasdanika/html/model/app/gen/semantic-info.html
+          
