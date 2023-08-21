@@ -1,11 +1,11 @@
 app-action:
   icon: https://docs.nasdanika.org/images/nasdanika-logo.png
-  text: Nasdanika
-  location: https://www.nasdanika.org 
+  text: Nasdanika Models
+  location: https://github.com/Nasdanika-Models
   children:
     - app-action:
         icon: fa fa-book
-        text: Test Models Documentation
+        text: TOGAF Models Documentation
         location: ${base-uri}index.html 
         content:
           content-text: TODO  
