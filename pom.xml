@@ -3,14 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.nasdanika.models.togaf</groupId>
 	<artifactId>parent</artifactId>
-	<version>10.2023.9.0</version>
+	<version>10.2023.8.0</version>
 	<packaging>pom</packaging>
 	<name>TOGAF 10 models, processors, doc generators</name>
 
 	<properties>
-		<core.version>2023.4.1</core.version>
-		<html.version>2023.4.1</html.version>
-		<models.ecore.version>2023.7.0</models.ecore.version>
+		<core.version>2023.8.0</core.version>
+		<html.version>2023.8.0</html.version>
+		<models.ecore.version>2023.8.0</models.ecore.version>
 		<jacoco.version>0.8.8</jacoco.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.javadoc.failOnError>false</maven.javadoc.failOnError>
@@ -35,7 +35,7 @@
 	        	        <dependency>
 	                	    <groupId>org.junit.jupiter</groupId>
 		                    <artifactId>junit-jupiter-engine</artifactId>
-		                    <version>5.9.1</version>
+		                    <version>5.10.0</version>
 	        	        </dependency>
 		            </dependencies>
 		        </plugin>
@@ -45,7 +45,7 @@
 		<dependency>
 		    <groupId>org.junit.jupiter</groupId>
 		    <artifactId>junit-jupiter-api</artifactId>
-		    <version>5.9.1</version>
+		    <version>5.10.0</version>
 		    <scope>test</scope>
 		</dependency>		
 	</dependencies>

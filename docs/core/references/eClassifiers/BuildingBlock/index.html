@@ -24,7 +24,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/components/table.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.2.2/echarts.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BRJVLK8CC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -74,14 +75,14 @@ window.nsdJsTreeSearchCallback = function(str, node) {
     <div class="container-fluid nsd-app-container">
       <div class="row">
         <div class="col nsd-app-header">
-          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="d7ee1581-cf5e-4a13-823c-0e0c3ac72ede" class="nsd-app-header-title">
+          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="e0bf1065-22e0-4c59-bc98-fdd2593ac889" class="nsd-app-header-title">
             <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon">Nasdanika Models</a>
           <ul class="nav nsd-app-header-navs">
             <li class="nav-item">
-              <a href="../../../../search.html" data-nsd-label-uuid="6176c068-1ddc-4e0a-9bfb-08b9eae884c2" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+              <a href="../../../../search.html" data-nsd-label-uuid="a0f0486a-4811-424c-9bef-da3b93aeadb9" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
             </li>
             <li class="nav-item">
-              <a href="../../../../glossary.html" data-nsd-label-uuid="f5718bf4-893e-46a4-858f-8867ae8dbc2a" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
+              <a href="../../../../glossary.html" data-nsd-label-uuid="117e5873-b09a-4496-a6dc-dbe26a856a3b" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
             </li>
           </ul>
         </div>
@@ -89,10 +90,10 @@ window.nsdJsTreeSearchCallback = function(str, node) {
       <div class="row">
         <div class="col nsd-app-navbar">
           <ul class="navbar navbar-light navbar-expand-lg">
-            <a href="../../../../index.html" data-nsd-label-uuid="6af04ab7-aff8-4010-84de-dafa615b4715" class="navbar-brand"><span class="fa fa-book nsd-app-label-icon"></span>TOGAF Models Documentation</a>
-            <button type="button" data-toggle="collapse" data-target="#nsd_1y" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            <a href="../../../../index.html" data-nsd-label-uuid="33e66644-cf64-4cff-94ec-668cfeda5a6f" class="navbar-brand"><span class="fa fa-book nsd-app-label-icon"></span>TOGAF Models Documentation</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd_fa" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd_1y" class="collapse navbar-collapse"></div>
+            <div id="nsd_fa" class="collapse navbar-collapse"></div>
           </ul>
         </div>
       </div>
@@ -104,38 +105,38 @@ window.nsdJsTreeSearchCallback = function(str, node) {
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon">core</a>
             </div>
             <div class="list-group list-group-flush">
-              <a href="../ArchitectureBuildingBlock/index.html" title="A reusable named concept, a capability" data-nsd-label-uuid="c9d3e9ef-443d-45ff-8a7e-89b2a4728adf" class="list-group-item list-group-action">
+              <a href="../ArchitectureBuildingBlock/index.html" title="A reusable named concept, a capability" data-nsd-label-uuid="63f04d8f-4ddf-41c6-9875-5847e2fbfcc2" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureBuildingBlock</a>
-              <a href="../ArchitectureDomain/index.html" title="Business, Data, Application, Technology (BDAT). There might be more doomains, e.g. security." data-nsd-label-uuid="d10e1fe5-6161-467b-aec3-250f41e5b5c3" class="list-group-item list-group-action">
+              <a href="../ArchitectureDomain/index.html" title="Business, Data, Application, Technology (BDAT). There might be more doomains, e.g. security." data-nsd-label-uuid="fa5e1d81-124d-45ee-ac7e-3e216bf79249" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureDomain</a>
-              <a href="../ArchitectureWorkProduct/index.html" data-nsd-label-uuid="febd9d76-51bb-49a5-8e0c-ce3a5113b835" class="list-group-item list-group-action">
+              <a href="../ArchitectureWorkProduct/index.html" data-nsd-label-uuid="31039908-7db3-4527-8597-f45eb5423c19" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureWorkProduct</a>
-              <a href="../Artifact/index.html" title="An artifact describes an aspect of architecture. It can be used in multiple deliverables. An artifact can be a catalog, a matrix or a diagram showing some architecture elments and possibly relationships between them." data-nsd-label-uuid="5c8d49e6-9074-4f3e-9b02-425fe73303ca" class="list-group-item list-group-action">
-                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Artifact</a><span title="A potentially reusable compoent" data-nsd-label-uuid="83207f6c-4562-4796-8a2a-9b9258415f61" class="list-group-item list-group-action active"><img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">BuildingBlock</span>
-              <a href="../Deliverable/index.html" title="Deliverables are contractually specified, formally reviewed, approved, and signed off by stakeholders." data-nsd-label-uuid="10e23063-8760-40ad-b3e2-384800bf8f0e" class="list-group-item list-group-action">
+              <a href="../Artifact/index.html" title="An artifact describes an aspect of architecture. It can be used in multiple deliverables. An artifact can be a catalog, a matrix or a diagram showing some architecture elments and possibly relationships between them." data-nsd-label-uuid="f576176b-5423-468d-936f-3b71e09bea1c" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Artifact</a><span title="A potentially reusable compoent" data-nsd-label-uuid="71af9ad5-85f8-42d2-b571-36bd009d5158" class="list-group-item list-group-action active"><img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">BuildingBlock</span>
+              <a href="../Deliverable/index.html" title="Deliverables are contractually specified, formally reviewed, approved, and signed off by stakeholders." data-nsd-label-uuid="13092eae-8ecb-4deb-80c6-707375790970" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Deliverable</a>
-              <a href="../Enterprise/index.html" title="Highest level of description for an organization" data-nsd-label-uuid="3c02457b-0a2f-471c-b476-5328c35ee58c" class="list-group-item list-group-action">
+              <a href="../Enterprise/index.html" title="Highest level of description for an organization" data-nsd-label-uuid="f0b101eb-3f05-4fd3-a55d-b20adea5ad16" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Enterprise</a>
-              <a href="../EnterpriseContinuumElement/index.html" title="An element of the enterprise continuum. Examples: Foundation Architectures, Common Systems Archtiectures, Industry Architectures, Organization-Specific Architectures (can be nested)." data-nsd-label-uuid="421e92b3-1668-4d3b-b316-ced22f259a8a" class="list-group-item list-group-action">
+              <a href="../EnterpriseContinuumElement/index.html" title="An element of the enterprise continuum. Examples: Foundation Architectures, Common Systems Archtiectures, Industry Architectures, Organization-Specific Architectures (can be nested)." data-nsd-label-uuid="e2a91ba9-f87e-4312-8812-f647f8a62159" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">EnterpriseContinuumElement</a>
-              <a href="../SolutionBuidingBlock/index.html" title="Implementation of a capability" data-nsd-label-uuid="4104fc83-e764-4c26-ac1d-bffc84b1803d" class="list-group-item list-group-action">
+              <a href="../SolutionBuidingBlock/index.html" title="Implementation of a capability" data-nsd-label-uuid="cdbd0e26-4f30-4d38-a219-6e960d6399f7" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">SolutionBuidingBlock</a>
-              <a href="../Stakeholder/index.html" data-nsd-label-uuid="654a2da8-1285-40b0-bec9-29bf6ee23a73" class="list-group-item list-group-action">
+              <a href="../Stakeholder/index.html" data-nsd-label-uuid="42d8c0c6-6a0c-445a-8816-e94137ce326a" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Stakeholder</a>
             </div>
           </div>
         </div>
-        <div data-nsd-label-uuid="83207f6c-4562-4796-8a2a-9b9258415f61" data-nsd-action-uris="uuid:83207f6c-4562-4796-8a2a-9b9258415f61" class="col nsd-app-content-panel">
+        <div data-nsd-label-uuid="71af9ad5-85f8-42d2-b571-36bd009d5158" data-nsd-action-uris="uuid:71af9ad5-85f8-42d2-b571-36bd009d5158" class="col nsd-app-content-panel">
           <div class="container-fluid">
             <div class="row nsd-app-content-panel-breadcrumb-row">
               <div class="col">
                 <nav aria-label="breadcrumb" class="nsd-app-content-panel-breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="../../../index.html" data-nsd-label-uuid="18eba8e3-ac54-4029-aaf6-e87e05361573">
+                      <a href="../../../index.html" data-nsd-label-uuid="0c8aea4a-349f-46e1-9747-0b2803062bf3">
                         <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon">core</a>
                     </li>
-                    <li class="breadcrumb-item active"><span title="A potentially reusable compoent" data-nsd-label-uuid="83207f6c-4562-4796-8a2a-9b9258415f61"><img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">BuildingBlock</span>
+                    <li class="breadcrumb-item active"><span title="A potentially reusable compoent" data-nsd-label-uuid="71af9ad5-85f8-42d2-b571-36bd009d5158"><img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">BuildingBlock</span>
                     </li>
                   </ol>
                 </nav>
@@ -143,24 +144,28 @@ window.nsdJsTreeSearchCallback = function(str, node) {
             </div>
             <div class="row nsd-app-content-panel-title-and-items-row">
               <div class="col-auto">
-                <h1><span title="A potentially reusable compoent" data-nsd-label-uuid="83207f6c-4562-4796-8a2a-9b9258415f61" class="nsd-app-content-panel-title"><img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">BuildingBlock</span>
+                <h1><span title="A potentially reusable compoent" data-nsd-label-uuid="71af9ad5-85f8-42d2-b571-36bd009d5158" class="nsd-app-content-panel-title"><img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">BuildingBlock</span>
                 </h1>
               </div>
               <div class="col">
                 <ul class="nav nsd-app-content-panel-navs">
                   <li class="nav-item">
-                    <a href="inheritance.html" data-nsd-label-uuid="8acdf1ea-17ee-4a80-9f5b-22b724df9ff5" class="nav-link">
+                    <a href="inheritance.html" data-nsd-label-uuid="cbb27db9-6a62-413f-90ab-c7737a5a3a62" class="nav-link">
                       <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif" class="nsd-app-label-icon">Inheritance</a>
                   </li>
                   <li class="nav-item">
-                    <a href="references.html" data-nsd-label-uuid="565b0ab0-e9a6-4d64-a75b-b306163142e0" class="nav-link">
+                    <a href="references.html" data-nsd-label-uuid="79230baa-2a97-4302-b1e3-ca04674dcec6" class="nav-link">
                       <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif" class="nsd-app-label-icon">References</a>
                   </li>
                   <li class="nav-item">
-                    <a href="diagram.html" data-nsd-label-uuid="f9bda5a8-d032-4ec3-8af7-70cb20c7e06d" class="nav-link"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</a>
+                    <a href="diagram.html" data-nsd-label-uuid="2812f7a9-2968-4b78-aec6-6b750fdca17c" class="nav-link"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</a>
                   </li>
                   <li class="nav-item">
-                    <a href="load-specification.html" data-nsd-label-uuid="a8665d8a-4807-461c-a09d-dba84f90c014" class="nav-link">Load specification</a>
+                    <a href="graph.html" data-nsd-label-uuid="a4620ece-96c2-4ead-8850-df70e5b9edf0" class="nav-link">
+                      <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon">Graph</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="load-specification.html" data-nsd-label-uuid="80b53ff2-38db-4b13-9bec-55f0820322b0" class="nav-link">Load specification</a>
                   </li>
                 </ul>
               </div>

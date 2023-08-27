@@ -100,10 +100,10 @@ public class TestTogafModelDocGen {
 		
 		WidgetFactory testProcessor = null;
 		Collection<Throwable> resolveFailures = new ArrayList<>();		
-		URI baseActionURI = URI.createURI("https://togaf.models.nasdanika.org/");
+		URI baseActionURI = URI.createURI("local://togaf.models.nasdanika.org/");
 		
 		Map<EPackage, URI> packageURIMap = Map.ofEntries(
-			Map.entry(EcorePackage.eINSTANCE, URI.createURI("https://ecore.nasdanika.org/")),			
+			Map.entry(EcorePackage.eINSTANCE, URI.createURI("https://ecore.models.nasdanika.org/")),			
 			Map.entry(CorePackage.eINSTANCE, URI.createURI("core/").resolve(baseActionURI))	
 		);
 		

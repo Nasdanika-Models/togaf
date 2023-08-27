@@ -2,247 +2,307 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
   <url>
     <loc>https://togaf.models.nasdanika.org/core/classifiers.html</loc>
-    <lastmod>2023-08-21T02:21:06.040-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.347-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://togaf.models.nasdanika.org/core/diagram.html</loc>
+    <lastmod>2023-08-27T11:19:21.351-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://togaf.models.nasdanika.org/core/graph.html</loc>
+    <lastmod>2023-08-27T11:19:21.353-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/index.html</loc>
-    <lastmod>2023-08-21T02:21:05.782-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.230-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/ArchitectureBuildingBlock/diagram.html</loc>
-    <lastmod>2023-08-21T02:21:05.804-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.246-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/ArchitectureBuildingBlock/graph.html</loc>
+    <lastmod>2023-08-27T11:19:21.247-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/ArchitectureBuildingBlock/index.html</loc>
-    <lastmod>2023-08-21T02:21:05.788-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.235-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/ArchitectureBuildingBlock/inheritance.html</loc>
-    <lastmod>2023-08-21T02:21:05.791-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.237-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/ArchitectureBuildingBlock/load-specification.html</loc>
-    <lastmod>2023-08-21T02:21:05.807-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.249-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/ArchitectureBuildingBlock/references.html</loc>
-    <lastmod>2023-08-21T02:21:05.800-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.244-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/ArchitectureDomain/diagram.html</loc>
-    <lastmod>2023-08-21T02:21:05.814-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.253-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/ArchitectureDomain/graph.html</loc>
+    <lastmod>2023-08-27T11:19:21.254-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/ArchitectureDomain/index.html</loc>
-    <lastmod>2023-08-21T02:21:05.810-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.251-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/ArchitectureWorkProduct/diagram.html</loc>
-    <lastmod>2023-08-21T02:21:05.835-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.260-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/ArchitectureWorkProduct/graph.html</loc>
+    <lastmod>2023-08-27T11:19:21.262-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/ArchitectureWorkProduct/index.html</loc>
-    <lastmod>2023-08-21T02:21:05.820-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.257-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/ArchitectureWorkProduct/inheritance.html</loc>
-    <lastmod>2023-08-21T02:21:05.828-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.259-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Artifact/diagram.html</loc>
-    <lastmod>2023-08-21T02:21:05.859-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.268-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Artifact/graph.html</loc>
+    <lastmod>2023-08-27T11:19:21.269-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Artifact/index.html</loc>
-    <lastmod>2023-08-21T02:21:05.840-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.264-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Artifact/inheritance.html</loc>
-    <lastmod>2023-08-21T02:21:05.843-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.266-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/BuildingBlock/diagram.html</loc>
-    <lastmod>2023-08-21T02:21:05.890-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.280-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/BuildingBlock/graph.html</loc>
+    <lastmod>2023-08-27T11:19:21.281-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/BuildingBlock/index.html</loc>
-    <lastmod>2023-08-21T02:21:05.871-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.271-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/BuildingBlock/inheritance.html</loc>
-    <lastmod>2023-08-21T02:21:05.874-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.273-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/BuildingBlock/load-specification.html</loc>
-    <lastmod>2023-08-21T02:21:05.907-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.284-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/BuildingBlock/references/eStructuralFeatures/specializes/index.html</loc>
-    <lastmod>2023-08-21T02:21:05.885-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.278-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/BuildingBlock/references.html</loc>
-    <lastmod>2023-08-21T02:21:05.877-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.274-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Deliverable/diagram.html</loc>
-    <lastmod>2023-08-21T02:21:05.949-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.299-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Deliverable/graph.html</loc>
+    <lastmod>2023-08-27T11:19:21.301-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Deliverable/index.html</loc>
-    <lastmod>2023-08-21T02:21:05.919-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.286-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Deliverable/inheritance.html</loc>
-    <lastmod>2023-08-21T02:21:05.928-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.288-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Deliverable/load-specification.html</loc>
-    <lastmod>2023-08-21T02:21:05.952-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.304-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Deliverable/references/eStructuralFeatures/signoffs/index.html</loc>
-    <lastmod>2023-08-21T02:21:05.943-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.296-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Deliverable/references/eStructuralFeatures/uses/index.html</loc>
-    <lastmod>2023-08-21T02:21:05.939-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.294-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Deliverable/references.html</loc>
-    <lastmod>2023-08-21T02:21:05.933-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.290-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Enterprise/diagram.html</loc>
-    <lastmod>2023-08-21T02:21:05.990-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.313-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Enterprise/graph.html</loc>
+    <lastmod>2023-08-27T11:19:21.314-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Enterprise/index.html</loc>
-    <lastmod>2023-08-21T02:21:05.956-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.306-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Enterprise/load-specification.html</loc>
-    <lastmod>2023-08-21T02:21:05.993-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.316-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Enterprise/references/eStructuralFeatures/enterpriseContinuum/index.html</loc>
-    <lastmod>2023-08-21T02:21:05.987-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.311-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Enterprise/references.html</loc>
-    <lastmod>2023-08-21T02:21:05.960-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.307-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/EnterpriseContinuumElement/diagram.html</loc>
-    <lastmod>2023-08-21T02:21:06.009-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.326-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/EnterpriseContinuumElement/graph.html</loc>
+    <lastmod>2023-08-27T11:19:21.327-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/EnterpriseContinuumElement/index.html</loc>
-    <lastmod>2023-08-21T02:21:06-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.318-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/EnterpriseContinuumElement/load-specification.html</loc>
-    <lastmod>2023-08-21T02:21:06.011-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.328-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/EnterpriseContinuumElement/references/eStructuralFeatures/specializations/index.html</loc>
-    <lastmod>2023-08-21T02:21:06.007-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.324-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/EnterpriseContinuumElement/references.html</loc>
-    <lastmod>2023-08-21T02:21:06.002-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.320-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/SolutionBuidingBlock/diagram.html</loc>
-    <lastmod>2023-08-21T02:21:06.028-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.339-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/SolutionBuidingBlock/graph.html</loc>
+    <lastmod>2023-08-27T11:19:21.340-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/SolutionBuidingBlock/index.html</loc>
-    <lastmod>2023-08-21T02:21:06.015-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.330-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/SolutionBuidingBlock/inheritance.html</loc>
-    <lastmod>2023-08-21T02:21:06.017-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.332-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/SolutionBuidingBlock/load-specification.html</loc>
-    <lastmod>2023-08-21T02:21:06.030-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.342-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/SolutionBuidingBlock/references/eStructuralFeatures/implements/index.html</loc>
-    <lastmod>2023-08-21T02:21:06.025-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.337-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/SolutionBuidingBlock/references.html</loc>
-    <lastmod>2023-08-21T02:21:06.021-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.333-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Stakeholder/diagram.html</loc>
-    <lastmod>2023-08-21T02:21:06.038-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.345-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Stakeholder/graph.html</loc>
+    <lastmod>2023-08-27T11:19:21.346-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/core/references/eClassifiers/Stakeholder/index.html</loc>
-    <lastmod>2023-08-21T02:21:06.035-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.343-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/glossary.html</loc>
-    <lastmod>2023-08-21T02:21:06.049-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.358-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/index.html</loc>
-    <lastmod>2023-08-21T02:21:05.777-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.227-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://togaf.models.nasdanika.org/search.html</loc>
-    <lastmod>2023-08-21T02:21:06.044-04:00</lastmod>
+    <lastmod>2023-08-27T11:19:21.356-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

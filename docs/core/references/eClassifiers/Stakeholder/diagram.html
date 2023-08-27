@@ -24,7 +24,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/components/table.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.2.2/echarts.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BRJVLK8CC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -74,14 +75,14 @@ window.nsdJsTreeSearchCallback = function(str, node) {
     <div class="container-fluid nsd-app-container">
       <div class="row">
         <div class="col nsd-app-header">
-          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="d7ee1581-cf5e-4a13-823c-0e0c3ac72ede" class="nsd-app-header-title">
+          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="e0bf1065-22e0-4c59-bc98-fdd2593ac889" class="nsd-app-header-title">
             <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon">Nasdanika Models</a>
           <ul class="nav nsd-app-header-navs">
             <li class="nav-item">
-              <a href="../../../../search.html" data-nsd-label-uuid="6176c068-1ddc-4e0a-9bfb-08b9eae884c2" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+              <a href="../../../../search.html" data-nsd-label-uuid="a0f0486a-4811-424c-9bef-da3b93aeadb9" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
             </li>
             <li class="nav-item">
-              <a href="../../../../glossary.html" data-nsd-label-uuid="f5718bf4-893e-46a4-858f-8867ae8dbc2a" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
+              <a href="../../../../glossary.html" data-nsd-label-uuid="117e5873-b09a-4496-a6dc-dbe26a856a3b" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
             </li>
           </ul>
         </div>
@@ -89,10 +90,10 @@ window.nsdJsTreeSearchCallback = function(str, node) {
       <div class="row">
         <div class="col nsd-app-navbar">
           <ul class="navbar navbar-light navbar-expand-lg">
-            <a href="../../../../index.html" data-nsd-label-uuid="6af04ab7-aff8-4010-84de-dafa615b4715" class="navbar-brand"><span class="fa fa-book nsd-app-label-icon"></span>TOGAF Models Documentation</a>
-            <button type="button" data-toggle="collapse" data-target="#nsd_am" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            <a href="../../../../index.html" data-nsd-label-uuid="33e66644-cf64-4cff-94ec-668cfeda5a6f" class="navbar-brand"><span class="fa fa-book nsd-app-label-icon"></span>TOGAF Models Documentation</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd_ia" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd_am" class="collapse navbar-collapse"></div>
+            <div id="nsd_ia" class="collapse navbar-collapse"></div>
           </ul>
         </div>
       </div>
@@ -104,44 +105,44 @@ window.nsdJsTreeSearchCallback = function(str, node) {
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon">core</a>
             </div>
             <div class="list-group list-group-flush">
-              <a href="../ArchitectureBuildingBlock/index.html" title="A reusable named concept, a capability" data-nsd-label-uuid="c9d3e9ef-443d-45ff-8a7e-89b2a4728adf" class="list-group-item list-group-action">
+              <a href="../ArchitectureBuildingBlock/index.html" title="A reusable named concept, a capability" data-nsd-label-uuid="63f04d8f-4ddf-41c6-9875-5847e2fbfcc2" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureBuildingBlock</a>
-              <a href="../ArchitectureDomain/index.html" title="Business, Data, Application, Technology (BDAT). There might be more doomains, e.g. security." data-nsd-label-uuid="d10e1fe5-6161-467b-aec3-250f41e5b5c3" class="list-group-item list-group-action">
+              <a href="../ArchitectureDomain/index.html" title="Business, Data, Application, Technology (BDAT). There might be more doomains, e.g. security." data-nsd-label-uuid="fa5e1d81-124d-45ee-ac7e-3e216bf79249" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureDomain</a>
-              <a href="../ArchitectureWorkProduct/index.html" data-nsd-label-uuid="febd9d76-51bb-49a5-8e0c-ce3a5113b835" class="list-group-item list-group-action">
+              <a href="../ArchitectureWorkProduct/index.html" data-nsd-label-uuid="31039908-7db3-4527-8597-f45eb5423c19" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureWorkProduct</a>
-              <a href="../Artifact/index.html" title="An artifact describes an aspect of architecture. It can be used in multiple deliverables. An artifact can be a catalog, a matrix or a diagram showing some architecture elments and possibly relationships between them." data-nsd-label-uuid="5c8d49e6-9074-4f3e-9b02-425fe73303ca" class="list-group-item list-group-action">
+              <a href="../Artifact/index.html" title="An artifact describes an aspect of architecture. It can be used in multiple deliverables. An artifact can be a catalog, a matrix or a diagram showing some architecture elments and possibly relationships between them." data-nsd-label-uuid="f576176b-5423-468d-936f-3b71e09bea1c" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Artifact</a>
-              <a href="../BuildingBlock/index.html" title="A potentially reusable compoent" data-nsd-label-uuid="83207f6c-4562-4796-8a2a-9b9258415f61" class="list-group-item list-group-action">
+              <a href="../BuildingBlock/index.html" title="A potentially reusable compoent" data-nsd-label-uuid="71af9ad5-85f8-42d2-b571-36bd009d5158" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">BuildingBlock</a>
-              <a href="../Deliverable/index.html" title="Deliverables are contractually specified, formally reviewed, approved, and signed off by stakeholders." data-nsd-label-uuid="10e23063-8760-40ad-b3e2-384800bf8f0e" class="list-group-item list-group-action">
+              <a href="../Deliverable/index.html" title="Deliverables are contractually specified, formally reviewed, approved, and signed off by stakeholders." data-nsd-label-uuid="13092eae-8ecb-4deb-80c6-707375790970" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Deliverable</a>
-              <a href="../Enterprise/index.html" title="Highest level of description for an organization" data-nsd-label-uuid="3c02457b-0a2f-471c-b476-5328c35ee58c" class="list-group-item list-group-action">
+              <a href="../Enterprise/index.html" title="Highest level of description for an organization" data-nsd-label-uuid="f0b101eb-3f05-4fd3-a55d-b20adea5ad16" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Enterprise</a>
-              <a href="../EnterpriseContinuumElement/index.html" title="An element of the enterprise continuum. Examples: Foundation Architectures, Common Systems Archtiectures, Industry Architectures, Organization-Specific Architectures (can be nested)." data-nsd-label-uuid="421e92b3-1668-4d3b-b316-ced22f259a8a" class="list-group-item list-group-action">
+              <a href="../EnterpriseContinuumElement/index.html" title="An element of the enterprise continuum. Examples: Foundation Architectures, Common Systems Archtiectures, Industry Architectures, Organization-Specific Architectures (can be nested)." data-nsd-label-uuid="e2a91ba9-f87e-4312-8812-f647f8a62159" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">EnterpriseContinuumElement</a>
-              <a href="../SolutionBuidingBlock/index.html" title="Implementation of a capability" data-nsd-label-uuid="4104fc83-e764-4c26-ac1d-bffc84b1803d" class="list-group-item list-group-action">
+              <a href="../SolutionBuidingBlock/index.html" title="Implementation of a capability" data-nsd-label-uuid="cdbd0e26-4f30-4d38-a219-6e960d6399f7" class="list-group-item list-group-action">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">SolutionBuidingBlock</a>
-              <a href="index.html" data-nsd-label-uuid="654a2da8-1285-40b0-bec9-29bf6ee23a73" class="list-group-item list-group-action active">
+              <a href="index.html" data-nsd-label-uuid="42d8c0c6-6a0c-445a-8816-e94137ce326a" class="list-group-item list-group-action active">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Stakeholder</a>
             </div>
           </div>
         </div>
-        <div data-nsd-label-uuid="a1260014-d295-45f8-93bf-19dafb6e1b4f" data-nsd-action-uris="uuid:a1260014-d295-45f8-93bf-19dafb6e1b4f" class="col nsd-app-content-panel">
+        <div data-nsd-label-uuid="db715551-be5d-4a46-858f-87eed950eabe" data-nsd-action-uris="uuid:db715551-be5d-4a46-858f-87eed950eabe" class="col nsd-app-content-panel">
           <div class="container-fluid">
             <div class="row nsd-app-content-panel-breadcrumb-row">
               <div class="col">
                 <nav aria-label="breadcrumb" class="nsd-app-content-panel-breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="../../../index.html" data-nsd-label-uuid="18eba8e3-ac54-4029-aaf6-e87e05361573">
+                      <a href="../../../index.html" data-nsd-label-uuid="0c8aea4a-349f-46e1-9747-0b2803062bf3">
                         <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon">core</a>
                     </li>
                     <li class="breadcrumb-item">
-                      <a href="index.html" data-nsd-label-uuid="654a2da8-1285-40b0-bec9-29bf6ee23a73">
+                      <a href="index.html" data-nsd-label-uuid="42d8c0c6-6a0c-445a-8816-e94137ce326a">
                         <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Stakeholder</a>
                     </li>
-                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="a1260014-d295-45f8-93bf-19dafb6e1b4f"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</span>
+                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="db715551-be5d-4a46-858f-87eed950eabe"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</span>
                     </li>
                   </ol>
                 </nav>
@@ -149,7 +150,7 @@ window.nsdJsTreeSearchCallback = function(str, node) {
             </div>
             <div class="row nsd-app-content-panel-title-and-items-row">
               <div class="col-auto">
-                <h1><span data-nsd-label-uuid="a1260014-d295-45f8-93bf-19dafb6e1b4f" class="nsd-app-content-panel-title"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</span>
+                <h1><span data-nsd-label-uuid="db715551-be5d-4a46-858f-87eed950eabe" class="nsd-app-content-panel-title"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</span>
                 </h1>
               </div>
             </div>
@@ -157,7 +158,7 @@ window.nsdJsTreeSearchCallback = function(str, node) {
               <div class="col">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col"><img src="data:image/png;base64, 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"></div>
+                    <div class="col"><img src="data:image/png;base64, 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"></div>
                   </div>
                 </div>
               </div>

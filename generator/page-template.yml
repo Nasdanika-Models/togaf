@@ -20,6 +20,7 @@ bootstrap-page:
     - https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/components/table.js
     - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
     - https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js 
+    - https://cdnjs.cloudflare.com/ajax/libs/echarts/5.2.2/echarts.min.js
   head:
     # Google analytics
     content-text: |+2    
