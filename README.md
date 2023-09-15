@@ -28,3 +28,32 @@ Architecture partitioning can be achieved using branches and forks:
 * Forking/branching can also be used for developing new architectures on top of the baseline architecture or a future architecture.
 
 This approach to architecture requires minimal infrastructure and as such can be used for efforts like research/POC's.
+
+This model is intended to be conceptual and follow the standard as close as possible. As such, it would not be usable AS-IS for architecture-as-code - another "physical" model would be required. The physical model will need additional "helper" classes and relationships to be usable "as-code". Such additional relationship would create "noise" in this model and this is why they should be separated into a another model. There might be multiple physical models and most likely many organizations would need their own physical models reflecting their existing structures - how people are organized, how assets are tracked. 
+
+The physical model may reference other models. For example, most elements may implement [Marked](http://ncore.models.nasdanika.org/references/eClassifiers/Marked/index.html) interface to track data provenance - wheren and when it was loaded from. They may also extend [Periond](http://ncore.models.nasdanika.org/references/eClassifiers/Period/index.html) or contain phases extending Period in order to model the temporal aspect of model/architecture elements.
+
+https://github.com/Nasdanika-Models/architecture is intended to be a "reference implementation" of a physical model which can be used as-is, extended, or tailored.
+
+#### Delivery vehicles/mechanisms
+
+It was mentioned above that the model can be delivered as a file or a set of files and as a Maven jar. 
+This section provides an overview of different way to deliver architecture information to stakeholders:
+
+* Model in XMI or binary or compressed binary format. Can be delivered via a version control system, web site, binary artifact (Maven jar). Consumers would need to use Java to work with the model.
+* Web sites generated from the model - static or dynamic targeted to different stakeholders.
+* Executable war file - stakeholders may host web sites in their environments including local environments.
+* Shared model repository, e.g. [CDO](https://projects.eclipse.org/projects/modeling.emf.cdo). Can be used in the same way as models. One usage scenario is to host the model in a repository and have dynamic web UI and API to serve data from the repository.
+* REST API - static generated from the model (JSON or JavaScript module(s) with behavior) or dynamic.
+* Language bindings - static, generated from the model or calling the REST API (static or dynamic). E.g. a C# client.
+* Command Line Interface (CLI) - a hierarchy of commands, can be implemented using https://picocli.info/. The CLI can contain commands to:
+    * Query the repository
+    * Generate
+        * Reports and documents. E.g. a static web site for a particular stakeholder.
+        * Executable code and solutions from patterns and info in the repository. For example:
+            * Generate a micro-service Maven project using an organization-specific pattern
+            * Creata a version control repository and store microservice code in that repository
+            * Create a CI/CD pipeline to deploy the microservice to the DEV environment
+            * Create an issue tracker project and issues for manual tasks, if not everything is automated
+        
+
