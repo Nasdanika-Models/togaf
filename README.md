@@ -31,7 +31,9 @@ This approach to architecture requires minimal infrastructure and as such can be
 
 This model is intended to be conceptual and follow the standard as close as possible. As such, it would not be usable AS-IS for architecture-as-code - another "physical" model would be required. The physical model will need additional "helper" classes and relationships to be usable "as-code". Such additional relationship would create "noise" in this model and this is why they should be separated into a another model. There might be multiple physical models and most likely many organizations would need their own physical models reflecting their existing structures - how people are organized, how assets are tracked. 
 
-The physical model may reference other models. For example, most elements may implement [Marked](http://ncore.models.nasdanika.org/references/eClassifiers/Marked/index.html) interface to track data provenance - wheren and when it was loaded from. They may also extend [Periond](http://ncore.models.nasdanika.org/references/eClassifiers/Period/index.html) or contain phases extending Period in order to model the temporal aspect of model/architecture elements.
+The physical model may reference other models. For example, most elements may implement [Marked](http://ncore.models.nasdanika.org/references/eClassifiers/Marked/index.html) interface to track data provenance - wheren and when it was loaded from. They may also extend [Periond](http://ncore.models.nasdanika.org/references/eClassifiers/Period/index.html) or contain phases extending Period in order to model the temporal aspect of model/architecture elements. 
+
+Some archtiecture classes may extend classes from the [Multiple-Criteria Decision Analysis](https://github.com/Nasdanika-Models/multiple-criteria-decision-analysis) model. For example, ``Architecture`` would extend ``Alternative`` to allow to perform disciplined comparison of different options. 
 
 https://github.com/Nasdanika-Models/architecture is intended to be a "reference implementation" of a physical model which can be used as-is, extended, or tailored.
 
