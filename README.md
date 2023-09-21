@@ -58,4 +58,6 @@ This section provides an overview of different way to deliver architecture infor
             * Create a CI/CD pipeline to deploy the microservice to the DEV environment
             * Create an issue tracker project and issues for manual tasks, if not everything is automated
         
+## Resources
 
+* [Azure Model](https://github.com/Nasdanika-Models/azure) - explains how a "generic" Azure metamodel can be tailored to organization's needs.
