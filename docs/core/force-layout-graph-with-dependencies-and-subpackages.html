@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="EN">
   <head>
-    <title>core</title>
+    <title>Force Graph</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -72,6 +72,16 @@ window.nsdJsTreeSearchCallback = function(str, node) {
 </script>
 </head>
   <body>
+    <div tabindex="-1" id="nsd_2d6" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">Hover mouse over nodes elements to display tooltips.
+Double-click on nodes to navigate go documentation.
+Drag to rearrange, nodes will not stay in place once released.
+</div>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid nsd-app-container">
       <div class="row">
         <div class="col nsd-app-header">
@@ -91,9 +101,9 @@ window.nsdJsTreeSearchCallback = function(str, node) {
         <div class="col nsd-app-navbar">
           <ul class="navbar navbar-light navbar-expand-lg">
             <a href="../index.html" data-nsd-label-uuid="c0d34ede-feb3-43f6-bedf-3a779d90c5e5" class="navbar-brand"><span class="fa fa-book nsd-app-label-icon"></span>TOGAF Models Documentation</a>
-            <button type="button" data-toggle="collapse" data-target="#nsd_2k0" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            <button type="button" data-toggle="collapse" data-target="#nsd_2ck" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd_2k0" class="collapse navbar-collapse"></div>
+            <div id="nsd_2ck" class="collapse navbar-collapse"></div>
           </ul>
         </div>
       </div>
@@ -101,7 +111,7 @@ window.nsdJsTreeSearchCallback = function(str, node) {
         <div class="col nsd-app-navigation-panel">
           <div class="card">
             <div class="card-header">
-              <a>
+              <a href="index.html">
                 <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon">core</a>
             </div>
             <div class="list-group list-group-flush">
@@ -148,42 +158,66 @@ window.nsdJsTreeSearchCallback = function(str, node) {
             </div>
           </div>
         </div>
-        <div data-nsd-label-uuid="265eb0af-180c-4f53-ba12-7898840244bf" data-nsd-action-uris="uuid:265eb0af-180c-4f53-ba12-7898840244bf" class="col nsd-app-content-panel">
+        <div data-nsd-label-uuid="3657d76f-679d-4941-9887-d11995505ec7" data-nsd-action-uris="uuid:3657d76f-679d-4941-9887-d11995505ec7" class="col nsd-app-content-panel">
           <div class="container-fluid">
+            <div class="row nsd-app-content-panel-breadcrumb-row">
+              <div class="col">
+                <nav aria-label="breadcrumb" class="nsd-app-content-panel-breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="index.html" data-nsd-label-uuid="265eb0af-180c-4f53-ba12-7898840244bf">
+                        <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon">core</a>
+                    </li>
+                    <li class="breadcrumb-item"><span data-nsd-label-uuid="c1c02e25-86ad-4bd4-90ba-0b39c054dc9f"><img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon">Graphs</span>
+                    </li>
+                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="3657d76f-679d-4941-9887-d11995505ec7">Force Graph</span>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
             <div class="row nsd-app-content-panel-title-and-items-row">
               <div class="col-auto">
-                <h1><span data-nsd-label-uuid="265eb0af-180c-4f53-ba12-7898840244bf" class="nsd-app-content-panel-title"><img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon">core<a href="https://ecore.models.nasdanika.org/references/eClassifiers/EPackage/index.html" style="vertical-align:super;font-size:x-small;margin-left:0.2em"><span class="far fa-question-circle nsd-app-label-icon"></span></a></span>
+                <h1><span data-nsd-label-uuid="3657d76f-679d-4941-9887-d11995505ec7" class="nsd-app-content-panel-title">Force Graph<a data-toggle="modal" data-target="#nsd_2d6" href="#" title="A live force-layout graph of package classifiers showing relationships between them" style="vertical-align:super;font-size:x-small;margin-left:0.2em"><span class="far fa-question-circle nsd-app-label-icon"></span></a></span>
                 </h1>
-              </div>
-              <div class="col">
-                <ul class="nav nsd-app-content-panel-navs">
-                  <li class="nav-item">
-                    <a href="classifiers.html" data-nsd-label-uuid="350df47e-e4f4-4b9b-a0b7-b98433be9e95" class="nav-link">Classifiers</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="diagram.html" data-nsd-label-uuid="decbf74d-a3cf-485f-9e3e-ab37c3536a32" class="nav-link"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</a>
-                  </li>
-                  <li class="nav-item">
-                    </li><li data-nsd-label-uuid="c1c02e25-86ad-4bd4-90ba-0b39c054dc9f" class="dropdown">
-                      <a role="button" data-toggle="dropdown" class="nav-link dropdown-toggle">
-                        <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon">Graphs</a>
-                      <div class="dropdown-menu">
-                        <a href="default-graph.html" data-nsd-label-uuid="981b0fb6-df0b-4873-9673-70894f74fee9" class="dropdown-item">Default Graph</a>
-                        <a href="circular-layout-graph.html" data-nsd-label-uuid="bd2c7089-f93c-4aab-8abe-82897b7f81e6" class="dropdown-item">Circular Graph</a>
-                        <a href="force-layout-graph.html" data-nsd-label-uuid="efc72ec0-9715-4594-ae2b-5771100b0cd1" class="dropdown-item">Force Graph</a>
-                        <div title="With dependencies and sub-packages" class="dropdown-divider"></div>
-                        <a href="default-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="d6bfb26c-23cc-4664-ab55-89b9fcbba01a" class="dropdown-item">Default Graph</a>
-                        <a href="circular-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="21dd19a8-8bdc-4d96-ab10-a8bfb6cc24d5" class="dropdown-item">Circular Graph</a>
-                        <a href="force-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="3657d76f-679d-4941-9887-d11995505ec7" class="dropdown-item">Force Graph</a>
-                      </div>
-                    </li>
-                  
-                </ul>
               </div>
             </div>
             <div class="row nsd-app-content-panel-content-row">
               <div class="col">
-                <div class="container-fluid"></div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col"><div id="graph-container-66" class="row" style="height:80vh;width:100%">
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var dom = document.getElementById("graph-container-66");
+		var myChart = echarts.init(dom, null, {
+			render: "canvas",
+			useDirtyRect: false
+		});
+		var option = {"legend":{},"series":[{"type":"graph","emphasis":{"focus":"adjacency"},"data":[{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Deliverable@ecore://nasdanika.org/models/togaf/core","name":"Deliverable","value":{"description":"Deliverables are contractually specified, formally reviewed, approved, and signed off by stakeholders.","externalLink":"references/eClassifiers/Deliverable/index.html"},"x":804.4414029304398,"y":0.0,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"SignOff@ecore://nasdanika.org/models/togaf/core","name":"SignOff","value":{"externalLink":"references/eClassifiers/SignOff/index.html"},"x":909.9870740052141,"y":0.0,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"ArchitectureWorkProduct@ecore://nasdanika.org/models/togaf/core","name":"ArchitectureWorkProduct","value":{"externalLink":"references/eClassifiers/ArchitectureWorkProduct/index.html"},"x":818.1755313346363,"y":109.91481426946444,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Artifact@ecore://nasdanika.org/models/togaf/core","name":"Artifact","value":{"description":"An artifact describes an aspect of architecture. It can be used in multiple deliverables. An artifact can be a catalog, a matrix or a diagram showing some architecture elments and possibly relationships between them.","externalLink":"references/eClassifiers/Artifact/index.html"},"x":713.8901475707881,"y":0.0,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"System@ecore://nasdanika.org/models/togaf/core","name":"System","value":{"externalLink":"references/eClassifiers/System/index.html"},"x":0.0,"y":734.8004478857064,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Architecture@ecore://nasdanika.org/models/togaf/core","name":"Architecture","value":{"externalLink":"references/eClassifiers/Architecture/index.html"},"x":0.0,"y":800.0,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"ArchitectureModel@ecore://nasdanika.org/models/togaf/core","name":"ArchitectureModel","value":{"externalLink":"references/eClassifiers/ArchitectureModel/index.html"},"x":333.0771665322303,"y":800.0,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"ArchitectureBuildingBlock@ecore://nasdanika.org/models/togaf/core","name":"ArchitectureBuildingBlock","value":{"description":"A reusable named concept, a capability","externalLink":"references/eClassifiers/ArchitectureBuildingBlock/index.html"},"x":1000.0,"y":419.687477163752,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"BuildingBlock@ecore://nasdanika.org/models/togaf/core","name":"BuildingBlock","value":{"description":"A potentially reusable compoent","externalLink":"references/eClassifiers/BuildingBlock/index.html"},"x":932.0891101115141,"y":258.5051916508088,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Concern@ecore://nasdanika.org/models/togaf/core","name":"Concern","value":{"externalLink":"references/eClassifiers/Concern/index.html"},"x":130.73665726814212,"y":710.6553053513287,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"ArchitectureView@ecore://nasdanika.org/models/togaf/core","name":"ArchitectureView","value":{"externalLink":"references/eClassifiers/ArchitectureView/index.html"},"x":188.15801763237147,"y":800.0,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"ArchitectureViewpoint@ecore://nasdanika.org/models/togaf/core","name":"ArchitectureViewpoint","value":{"externalLink":"references/eClassifiers/ArchitectureViewpoint/index.html"},"x":241.81482299007948,"y":799.9221414149747,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"ModelKind@ecore://nasdanika.org/models/togaf/core","name":"ModelKind","value":{"externalLink":"references/eClassifiers/ModelKind/index.html"},"x":406.2903815681233,"y":800.0,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Stakeholder@ecore://nasdanika.org/models/togaf/core","name":"Stakeholder","value":{"externalLink":"references/eClassifiers/Stakeholder/index.html"},"x":2.490152817565931,"y":661.865422442312,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"ArchitectureDescription@ecore://nasdanika.org/models/togaf/core","name":"ArchitectureDescription","value":{"externalLink":"references/eClassifiers/ArchitectureDescription/index.html"},"x":83.80933440092922,"y":781.4588560144374,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"ArchitectureDomain@ecore://nasdanika.org/models/togaf/core","name":"ArchitectureDomain","value":{"description":"Business, Data, Application, Technology (BDAT). There might be more doomains, e.g. security.","externalLink":"references/eClassifiers/ArchitectureDomain/index.html"},"x":0.0,"y":0.0,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"SolutionBuidingBlock@ecore://nasdanika.org/models/togaf/core","name":"SolutionBuidingBlock","value":{"description":"Implementation of a capability","externalLink":"references/eClassifiers/SolutionBuidingBlock/index.html"},"x":1000.0,"y":317.15249730815884,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Principle@ecore://nasdanika.org/models/togaf/core","name":"Principle","value":{"externalLink":"references/eClassifiers/Principle/index.html"},"x":1000.0,"y":0.0,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Enterprise@ecore://nasdanika.org/models/togaf/core","name":"Enterprise","value":{"description":"Highest level of description for an organization","externalLink":"references/eClassifiers/Enterprise/index.html"},"x":1000.0,"y":723.2958729839385,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"EnterpriseContinuumElement@ecore://nasdanika.org/models/togaf/core","name":"EnterpriseContinuumElement","value":{"description":"An element of the enterprise continuum. Examples: Foundation Architectures, Common Systems Archtiectures, Industry Architectures, Organization-Specific Architectures (can be nested).","externalLink":"references/eClassifiers/EnterpriseContinuumElement/index.html"},"x":1000.0,"y":585.3400064294452,"category":0}],"symbolSize":16,"roam":true,"layout":"force","links":[{"source":0,"target":1},{"source":0,"target":2},{"source":0,"target":3},{"source":3,"target":2},{"source":4,"target":5},{"source":7,"target":8},{"source":8,"target":2},{"source":10,"target":9},{"source":10,"target":6},{"source":11,"target":9},{"source":11,"target":10},{"source":11,"target":12},{"source":12,"target":6},{"source":13,"target":9},{"source":13,"target":4},{"source":14,"target":11},{"source":14,"target":13},{"source":14,"target":9},{"source":14,"target":4},{"source":14,"target":10},{"source":14,"target":5},{"source":16,"target":7},{"source":16,"target":8},{"source":18,"target":19},{"source":19,"target":7}],"categories":[{"name":"core"}],"draggable":true,"label":{"show":true,"position":"right"},"lineStyle":{"color":"source","curveness":0},"force":{"repulsion":200,"gravity":0.1,"edgeLength":200}}]};
+		option.tooltip = {};
+		option.series[0].tooltip = {
+			formatter: function(arg) {
+				return arg.value ? arg.value.description : null;
+			}
+		};
+		myChart.setOption(option);
+		myChart.on("dblclick", function(params) {
+			if (params.value) {
+				if (params.value.link) {
+					window.open(params.value.link, "_self");
+				} else if (params.value.externalLink) {
+					window.open(params.value.externalLink);
+				}
+			}
+		});
+		window.addEventListener("resize", myChart.resize);
+	});
+</script>
+</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -25,26 +25,16 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface ArchitectureView extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Addresses</b></em>' reference.
+	 * Returns the value of the '<em><b>Addresses</b></em>' reference list.
+	 * The list contents are of type {@link org.nasdanika.models.togaf.core.Concern}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Addresses</em>' reference.
-	 * @see #setAddresses(Concern)
+	 * @return the value of the '<em>Addresses</em>' reference list.
 	 * @see org.nasdanika.models.togaf.core.CorePackage#getArchitectureView_Addresses()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
-	Concern getAddresses();
-
-	/**
-	 * Sets the value of the '{@link org.nasdanika.models.togaf.core.ArchitectureView#getAddresses <em>Addresses</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Addresses</em>' reference.
-	 * @see #getAddresses()
-	 * @generated
-	 */
-	void setAddresses(Concern value);
+	EList<Concern> getAddresses();
 
 	/**
 	 * Returns the value of the '<em><b>Models</b></em>' reference list.

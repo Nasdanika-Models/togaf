@@ -64,28 +64,10 @@ public class ArchitectureViewImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
-	public Concern getAddresses() {
-		return (Concern)eDynamicGet(CorePackage.ARCHITECTURE_VIEW__ADDRESSES, CorePackage.Literals.ARCHITECTURE_VIEW__ADDRESSES, true, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Concern basicGetAddresses() {
-		return (Concern)eDynamicGet(CorePackage.ARCHITECTURE_VIEW__ADDRESSES, CorePackage.Literals.ARCHITECTURE_VIEW__ADDRESSES, false, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAddresses(Concern newAddresses) {
-		eDynamicSet(CorePackage.ARCHITECTURE_VIEW__ADDRESSES, CorePackage.Literals.ARCHITECTURE_VIEW__ADDRESSES, newAddresses);
+	public EList<Concern> getAddresses() {
+		return (EList<Concern>)eDynamicGet(CorePackage.ARCHITECTURE_VIEW__ADDRESSES, CorePackage.Literals.ARCHITECTURE_VIEW__ADDRESSES, true, true);
 	}
 
 	/**
@@ -108,8 +90,7 @@ public class ArchitectureViewImpl extends MinimalEObjectImpl.Container implement
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case CorePackage.ARCHITECTURE_VIEW__ADDRESSES:
-				if (resolve) return getAddresses();
-				return basicGetAddresses();
+				return getAddresses();
 			case CorePackage.ARCHITECTURE_VIEW__MODELS:
 				return getModels();
 		}
@@ -126,7 +107,8 @@ public class ArchitectureViewImpl extends MinimalEObjectImpl.Container implement
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.ARCHITECTURE_VIEW__ADDRESSES:
-				setAddresses((Concern)newValue);
+				getAddresses().clear();
+				getAddresses().addAll((Collection<? extends Concern>)newValue);
 				return;
 			case CorePackage.ARCHITECTURE_VIEW__MODELS:
 				getModels().clear();
@@ -145,7 +127,7 @@ public class ArchitectureViewImpl extends MinimalEObjectImpl.Container implement
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case CorePackage.ARCHITECTURE_VIEW__ADDRESSES:
-				setAddresses((Concern)null);
+				getAddresses().clear();
 				return;
 			case CorePackage.ARCHITECTURE_VIEW__MODELS:
 				getModels().clear();
@@ -163,7 +145,7 @@ public class ArchitectureViewImpl extends MinimalEObjectImpl.Container implement
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case CorePackage.ARCHITECTURE_VIEW__ADDRESSES:
-				return basicGetAddresses() != null;
+				return !getAddresses().isEmpty();
 			case CorePackage.ARCHITECTURE_VIEW__MODELS:
 				return !getModels().isEmpty();
 		}

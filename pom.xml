@@ -8,10 +8,10 @@
 	<name>TOGAF 10 models, processors, doc generators</name>
 
 	<properties>
-		<core.version>2023.9.0</core.version>
-		<html.version>2023.9.1</html.version>
-		<models.ecore.version>2023.9.1</models.ecore.version>
-		<jacoco.version>0.8.8</jacoco.version>
+		<core.version>2023.9.1</core.version>
+		<html.version>2023.9.2</html.version>
+		<models.ecore.version>2023.9.2</models.ecore.version>
+		<jacoco.version>0.8.10</jacoco.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.javadoc.failOnError>false</maven.javadoc.failOnError>
 	</properties>	

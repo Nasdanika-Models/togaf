@@ -789,7 +789,7 @@ public interface CorePackage extends EPackage {
 	int MODEL_KIND_OPERATION_COUNT = 0;
 
 	/**
-	 * The feature id for the '<em><b>Addresses</b></em>' reference.
+	 * The feature id for the '<em><b>Addresses</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -991,10 +991,10 @@ public interface CorePackage extends EPackage {
 	EClass getArchitectureView();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.nasdanika.models.togaf.core.ArchitectureView#getAddresses <em>Addresses</em>}'.
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.togaf.core.ArchitectureView#getAddresses <em>Addresses</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Addresses</em>'.
+	 * @return the meta object for the reference list '<em>Addresses</em>'.
 	 * @see org.nasdanika.models.togaf.core.ArchitectureView#getAddresses()
 	 * @see #getArchitectureView()
 	 * @generated
@@ -1432,7 +1432,7 @@ public interface CorePackage extends EPackage {
 		 */
 		EClass ARCHITECTURE_VIEW = eINSTANCE.getArchitectureView();
 		/**
-		 * The meta object literal for the '<em><b>Addresses</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Addresses</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

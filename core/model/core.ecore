@@ -136,7 +136,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="governs" eType="#//ArchitectureModel"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ArchitectureView">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="addresses" eType="#//Concern"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="addresses" lowerBound="1"
+        upperBound="-1" eType="#//Concern"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="models" lowerBound="1"
         upperBound="-1" eType="#//ArchitectureModel"/>
   </eClassifiers>
