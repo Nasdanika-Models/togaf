@@ -11,7 +11,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.nasdanika.models.togaf.core.Artifact;
 import org.nasdanika.models.togaf.core.CorePackage;
 import org.nasdanika.models.togaf.core.Deliverable;
-import org.nasdanika.models.togaf.core.Stakeholder;
+import org.nasdanika.models.togaf.core.SignOff;
 
 /**
  * <!-- begin-user-doc -->
@@ -65,8 +65,8 @@ public class DeliverableImpl extends ArchitectureWorkProductImpl implements Deli
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public EList<Stakeholder> getSignoffs() {
-		return (EList<Stakeholder>)eDynamicGet(CorePackage.DELIVERABLE__SIGNOFFS, CorePackage.Literals.DELIVERABLE__SIGNOFFS, true, true);
+	public EList<SignOff> getSignoffs() {
+		return (EList<SignOff>)eDynamicGet(CorePackage.DELIVERABLE__SIGNOFFS, CorePackage.Literals.DELIVERABLE__SIGNOFFS, true, true);
 	}
 
 	/**
@@ -100,7 +100,7 @@ public class DeliverableImpl extends ArchitectureWorkProductImpl implements Deli
 				return;
 			case CorePackage.DELIVERABLE__SIGNOFFS:
 				getSignoffs().clear();
-				getSignoffs().addAll((Collection<? extends Stakeholder>)newValue);
+				getSignoffs().addAll((Collection<? extends SignOff>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

@@ -8,16 +8,25 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import org.nasdanika.models.togaf.core.Architecture;
 import org.nasdanika.models.togaf.core.ArchitectureBuildingBlock;
+import org.nasdanika.models.togaf.core.ArchitectureDescription;
 import org.nasdanika.models.togaf.core.ArchitectureDomain;
+import org.nasdanika.models.togaf.core.ArchitectureModel;
+import org.nasdanika.models.togaf.core.ArchitectureView;
+import org.nasdanika.models.togaf.core.ArchitectureViewpoint;
 import org.nasdanika.models.togaf.core.ArchitectureWorkProduct;
 import org.nasdanika.models.togaf.core.Artifact;
 import org.nasdanika.models.togaf.core.BuildingBlock;
+import org.nasdanika.models.togaf.core.Concern;
 import org.nasdanika.models.togaf.core.CoreFactory;
 import org.nasdanika.models.togaf.core.CorePackage;
 import org.nasdanika.models.togaf.core.Deliverable;
 import org.nasdanika.models.togaf.core.Enterprise;
 import org.nasdanika.models.togaf.core.EnterpriseContinuumElement;
+import org.nasdanika.models.togaf.core.ModelKind;
+import org.nasdanika.models.togaf.core.Principle;
+import org.nasdanika.models.togaf.core.SignOff;
 import org.nasdanika.models.togaf.core.SolutionBuidingBlock;
 import org.nasdanika.models.togaf.core.Stakeholder;
 
@@ -52,6 +61,41 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass concernEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass architectureViewpointEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass modelKindEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass architectureViewEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass architectureModelEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass architectureWorkProductEClass = null;
 	/**
 	 * <!-- begin-user-doc -->
@@ -65,6 +109,13 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 	 * @generated
 	 */
 	private EClass deliverableEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass signOffEClass = null;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -89,6 +140,34 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 	 * @generated
 	 */
 	private EClass enterpriseContinuumElementEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass principleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass systemEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass architectureDescriptionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass architectureEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -196,6 +275,136 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getStakeholder_HasInterestIn() {
+		return (EReference)stakeholderEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getStakeholder_Has() {
+		return (EReference)stakeholderEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getConcern() {
+		return concernEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArchitectureViewpoint() {
+		return architectureViewpointEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArchitectureViewpoint_Frames() {
+		return (EReference)architectureViewpointEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArchitectureViewpoint_Governs() {
+		return (EReference)architectureViewpointEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArchitectureViewpoint_ModelKinds() {
+		return (EReference)architectureViewpointEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getModelKind() {
+		return modelKindEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getModelKind_Governs() {
+		return (EReference)modelKindEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArchitectureView() {
+		return architectureViewEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArchitectureView_Addresses() {
+		return (EReference)architectureViewEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArchitectureView_Models() {
+		return (EReference)architectureViewEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArchitectureModel() {
+		return architectureModelEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getArchitectureWorkProduct() {
 		return architectureWorkProductEClass;
 	}
@@ -238,6 +447,16 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 	@Override
 	public EReference getDeliverable_Signoffs() {
 		return (EReference)deliverableEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSignOff() {
+		return signOffEClass;
 	}
 
 	/**
@@ -336,6 +555,116 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getPrinciple() {
+		return principleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSystem() {
+		return systemEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSystem_Exhibits() {
+		return (EReference)systemEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArchitectureDescription() {
+		return architectureDescriptionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArchitectureDescription_Expresses() {
+		return (EReference)architectureDescriptionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArchitectureDescription_IdentifiesSystem() {
+		return (EReference)architectureDescriptionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArchitectureDescription_IdentifiesStakeholders() {
+		return (EReference)architectureDescriptionEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArchitectureDescription_IdentifiesConcerns() {
+		return (EReference)architectureDescriptionEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArchitectureDescription_ViewPoints() {
+		return (EReference)architectureDescriptionEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getArchitectureDescription_Views() {
+		return (EReference)architectureDescriptionEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getArchitecture() {
+		return architectureEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public CoreFactory getCoreFactory() {
 		return (CoreFactory)getEFactoryInstance();
 	}
@@ -364,8 +693,6 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 
 		architectureDomainEClass = createEClass(ARCHITECTURE_DOMAIN);
 
-		stakeholderEClass = createEClass(STAKEHOLDER);
-
 		architectureWorkProductEClass = createEClass(ARCHITECTURE_WORK_PRODUCT);
 
 		artifactEClass = createEClass(ARTIFACT);
@@ -373,6 +700,8 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		deliverableEClass = createEClass(DELIVERABLE);
 		createEReference(deliverableEClass, DELIVERABLE__USES);
 		createEReference(deliverableEClass, DELIVERABLE__SIGNOFFS);
+
+		signOffEClass = createEClass(SIGN_OFF);
 
 		buildingBlockEClass = createEClass(BUILDING_BLOCK);
 		createEReference(buildingBlockEClass, BUILDING_BLOCK__SPECIALIZES);
@@ -386,6 +715,41 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		createEReference(enterpriseContinuumElementEClass, ENTERPRISE_CONTINUUM_ELEMENT__SPECIALIZATIONS);
 		createEReference(enterpriseContinuumElementEClass, ENTERPRISE_CONTINUUM_ELEMENT__ARCHITECTURE_BUILDING_BLOCKS);
 		createEReference(enterpriseContinuumElementEClass, ENTERPRISE_CONTINUUM_ELEMENT__SOLUTION_BUILDING_BLOCKS);
+
+		principleEClass = createEClass(PRINCIPLE);
+
+		systemEClass = createEClass(SYSTEM);
+		createEReference(systemEClass, SYSTEM__EXHIBITS);
+
+		architectureDescriptionEClass = createEClass(ARCHITECTURE_DESCRIPTION);
+		createEReference(architectureDescriptionEClass, ARCHITECTURE_DESCRIPTION__EXPRESSES);
+		createEReference(architectureDescriptionEClass, ARCHITECTURE_DESCRIPTION__IDENTIFIES_SYSTEM);
+		createEReference(architectureDescriptionEClass, ARCHITECTURE_DESCRIPTION__IDENTIFIES_STAKEHOLDERS);
+		createEReference(architectureDescriptionEClass, ARCHITECTURE_DESCRIPTION__IDENTIFIES_CONCERNS);
+		createEReference(architectureDescriptionEClass, ARCHITECTURE_DESCRIPTION__VIEW_POINTS);
+		createEReference(architectureDescriptionEClass, ARCHITECTURE_DESCRIPTION__VIEWS);
+
+		architectureEClass = createEClass(ARCHITECTURE);
+
+		stakeholderEClass = createEClass(STAKEHOLDER);
+		createEReference(stakeholderEClass, STAKEHOLDER__HAS_INTEREST_IN);
+		createEReference(stakeholderEClass, STAKEHOLDER__HAS);
+
+		concernEClass = createEClass(CONCERN);
+
+		architectureViewpointEClass = createEClass(ARCHITECTURE_VIEWPOINT);
+		createEReference(architectureViewpointEClass, ARCHITECTURE_VIEWPOINT__FRAMES);
+		createEReference(architectureViewpointEClass, ARCHITECTURE_VIEWPOINT__GOVERNS);
+		createEReference(architectureViewpointEClass, ARCHITECTURE_VIEWPOINT__MODEL_KINDS);
+
+		modelKindEClass = createEClass(MODEL_KIND);
+		createEReference(modelKindEClass, MODEL_KIND__GOVERNS);
+
+		architectureViewEClass = createEClass(ARCHITECTURE_VIEW);
+		createEReference(architectureViewEClass, ARCHITECTURE_VIEW__ADDRESSES);
+		createEReference(architectureViewEClass, ARCHITECTURE_VIEW__MODELS);
+
+		architectureModelEClass = createEClass(ARCHITECTURE_MODEL);
 	}
 
 	/**
@@ -428,15 +792,15 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 
 		initEClass(architectureDomainEClass, ArchitectureDomain.class, "ArchitectureDomain", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(stakeholderEClass, Stakeholder.class, "Stakeholder", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
 		initEClass(architectureWorkProductEClass, ArchitectureWorkProduct.class, "ArchitectureWorkProduct", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(artifactEClass, Artifact.class, "Artifact", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(deliverableEClass, Deliverable.class, "Deliverable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeliverable_Uses(), this.getArtifact(), null, "uses", null, 0, -1, Deliverable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeliverable_Signoffs(), this.getStakeholder(), null, "signoffs", null, 0, -1, Deliverable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDeliverable_Signoffs(), this.getSignOff(), null, "signoffs", null, 1, -1, Deliverable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(signOffEClass, SignOff.class, "SignOff", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(buildingBlockEClass, BuildingBlock.class, "BuildingBlock", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getBuildingBlock_Specializes(), this.getBuildingBlock(), null, "specializes", null, 0, -1, BuildingBlock.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -450,6 +814,41 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		initEReference(getEnterpriseContinuumElement_Specializations(), this.getEnterpriseContinuumElement(), null, "specializations", null, 0, -1, EnterpriseContinuumElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEnterpriseContinuumElement_ArchitectureBuildingBlocks(), this.getArchitectureBuildingBlock(), null, "architectureBuildingBlocks", null, 0, -1, EnterpriseContinuumElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEnterpriseContinuumElement_SolutionBuildingBlocks(), this.getArchitectureBuildingBlock(), null, "solutionBuildingBlocks", null, 0, -1, EnterpriseContinuumElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(principleEClass, Principle.class, "Principle", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(systemEClass, org.nasdanika.models.togaf.core.System.class, "System", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSystem_Exhibits(), this.getArchitecture(), null, "exhibits", null, 0, 1, org.nasdanika.models.togaf.core.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(architectureDescriptionEClass, ArchitectureDescription.class, "ArchitectureDescription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getArchitectureDescription_Expresses(), this.getArchitecture(), null, "expresses", null, 0, 1, ArchitectureDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getArchitectureDescription_IdentifiesSystem(), this.getSystem(), null, "identifiesSystem", null, 1, 1, ArchitectureDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getArchitectureDescription_IdentifiesStakeholders(), this.getStakeholder(), null, "identifiesStakeholders", null, 1, -1, ArchitectureDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getArchitectureDescription_IdentifiesConcerns(), this.getConcern(), null, "identifiesConcerns", null, 1, -1, ArchitectureDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getArchitectureDescription_ViewPoints(), this.getArchitectureViewpoint(), null, "viewPoints", null, 1, -1, ArchitectureDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getArchitectureDescription_Views(), this.getArchitectureView(), null, "views", null, 1, -1, ArchitectureDescription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(architectureEClass, Architecture.class, "Architecture", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(stakeholderEClass, Stakeholder.class, "Stakeholder", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getStakeholder_HasInterestIn(), this.getSystem(), null, "hasInterestIn", null, 0, 1, Stakeholder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getStakeholder_Has(), this.getConcern(), null, "has", null, 0, -1, Stakeholder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(concernEClass, Concern.class, "Concern", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(architectureViewpointEClass, ArchitectureViewpoint.class, "ArchitectureViewpoint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getArchitectureViewpoint_Frames(), this.getConcern(), null, "frames", null, 0, -1, ArchitectureViewpoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getArchitectureViewpoint_Governs(), this.getArchitectureView(), null, "governs", null, 0, 1, ArchitectureViewpoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getArchitectureViewpoint_ModelKinds(), this.getModelKind(), null, "modelKinds", null, 1, -1, ArchitectureViewpoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(modelKindEClass, ModelKind.class, "ModelKind", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getModelKind_Governs(), this.getArchitectureModel(), null, "governs", null, 0, 1, ModelKind.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(architectureViewEClass, ArchitectureView.class, "ArchitectureView", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getArchitectureView_Addresses(), this.getConcern(), null, "addresses", null, 0, 1, ArchitectureView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getArchitectureView_Models(), this.getArchitectureModel(), null, "models", null, 1, -1, ArchitectureView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(architectureModelEClass, ArchitectureModel.class, "ArchitectureModel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -550,6 +949,36 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		   source,
 		   new String[] {
 			   "documentation", "Specializations of this element. E.g. organization-specific archtiectures are specializations of industry archtectures"
+		   });
+		addAnnotation
+		  (getSystem_Exhibits(),
+		   source,
+		   new String[] {
+			   "documentation", "A System exibits Architecture"
+		   });
+		addAnnotation
+		  (getArchitectureDescription_Expresses(),
+		   source,
+		   new String[] {
+			   "documentation", "An ArchitectureDescription expresses Architecture"
+		   });
+		addAnnotation
+		  (getArchitectureDescription_IdentifiesSystem(),
+		   source,
+		   new String[] {
+			   "documentation", "An ArchitectureDescription identifies System"
+		   });
+		addAnnotation
+		  (getArchitectureDescription_IdentifiesStakeholders(),
+		   source,
+		   new String[] {
+			   "documentation", "An ArchitectureDescription identifies System"
+		   });
+		addAnnotation
+		  (getArchitectureDescription_IdentifiesConcerns(),
+		   source,
+		   new String[] {
+			   "documentation", "An ArchitectureDescription identifies System"
 		   });
 	}
 

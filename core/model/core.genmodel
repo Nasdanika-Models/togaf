@@ -13,13 +13,13 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference core.ecore#//Enterprise/enterpriseContinuum"/>
     </genClasses>
     <genClasses ecoreClass="core.ecore#//ArchitectureDomain"/>
-    <genClasses ecoreClass="core.ecore#//Stakeholder"/>
     <genClasses ecoreClass="core.ecore#//ArchitectureWorkProduct"/>
     <genClasses ecoreClass="core.ecore#//Artifact"/>
     <genClasses ecoreClass="core.ecore#//Deliverable">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//Deliverable/uses"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//Deliverable/signoffs"/>
     </genClasses>
+    <genClasses ecoreClass="core.ecore#//SignOff"/>
     <genClasses ecoreClass="core.ecore#//BuildingBlock">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//BuildingBlock/specializes"/>
     </genClasses>
@@ -32,5 +32,36 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference core.ecore#//EnterpriseContinuumElement/architectureBuildingBlocks"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference core.ecore#//EnterpriseContinuumElement/solutionBuildingBlocks"/>
     </genClasses>
+    <genClasses ecoreClass="core.ecore#//Principle"/>
+    <genClasses ecoreClass="core.ecore#//System">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//System/exhibits"/>
+    </genClasses>
+    <genClasses ecoreClass="core.ecore#//ArchitectureDescription">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//ArchitectureDescription/expresses"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//ArchitectureDescription/identifiesSystem"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//ArchitectureDescription/identifiesStakeholders"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//ArchitectureDescription/identifiesConcerns"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//ArchitectureDescription/viewPoints"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//ArchitectureDescription/views"/>
+    </genClasses>
+    <genClasses ecoreClass="core.ecore#//Architecture"/>
+    <genClasses ecoreClass="core.ecore#//Stakeholder">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//Stakeholder/hasInterestIn"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//Stakeholder/has"/>
+    </genClasses>
+    <genClasses ecoreClass="core.ecore#//Concern"/>
+    <genClasses ecoreClass="core.ecore#//ArchitectureViewpoint">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//ArchitectureViewpoint/frames"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//ArchitectureViewpoint/governs"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//ArchitectureViewpoint/modelKinds"/>
+    </genClasses>
+    <genClasses ecoreClass="core.ecore#//ModelKind">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//ModelKind/governs"/>
+    </genClasses>
+    <genClasses ecoreClass="core.ecore#//ArchitectureView">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//ArchitectureView/addresses"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference core.ecore#//ArchitectureView/models"/>
+    </genClasses>
+    <genClasses ecoreClass="core.ecore#//ArchitectureModel"/>
   </genPackages>
 </genmodel:GenModel>

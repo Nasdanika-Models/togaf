@@ -49,6 +49,51 @@ public interface CoreFactory extends EFactory {
 	Stakeholder createStakeholder();
 
 	/**
+	 * Returns a new object of class '<em>Concern</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Concern</em>'.
+	 * @generated
+	 */
+	Concern createConcern();
+
+	/**
+	 * Returns a new object of class '<em>Architecture Viewpoint</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Architecture Viewpoint</em>'.
+	 * @generated
+	 */
+	ArchitectureViewpoint createArchitectureViewpoint();
+
+	/**
+	 * Returns a new object of class '<em>Model Kind</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Model Kind</em>'.
+	 * @generated
+	 */
+	ModelKind createModelKind();
+
+	/**
+	 * Returns a new object of class '<em>Architecture View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Architecture View</em>'.
+	 * @generated
+	 */
+	ArchitectureView createArchitectureView();
+
+	/**
+	 * Returns a new object of class '<em>Architecture Model</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Architecture Model</em>'.
+	 * @generated
+	 */
+	ArchitectureModel createArchitectureModel();
+
+	/**
 	 * Returns a new object of class '<em>Architecture Work Product</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,6 +119,15 @@ public interface CoreFactory extends EFactory {
 	 * @generated
 	 */
 	Deliverable createDeliverable();
+
+	/**
+	 * Returns a new object of class '<em>Sign Off</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sign Off</em>'.
+	 * @generated
+	 */
+	SignOff createSignOff();
 
 	/**
 	 * Returns a new object of class '<em>Building Block</em>'.
@@ -110,6 +164,42 @@ public interface CoreFactory extends EFactory {
 	 * @generated
 	 */
 	EnterpriseContinuumElement createEnterpriseContinuumElement();
+
+	/**
+	 * Returns a new object of class '<em>Principle</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Principle</em>'.
+	 * @generated
+	 */
+	Principle createPrinciple();
+
+	/**
+	 * Returns a new object of class '<em>System</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>System</em>'.
+	 * @generated
+	 */
+	System createSystem();
+
+	/**
+	 * Returns a new object of class '<em>Architecture Description</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Architecture Description</em>'.
+	 * @generated
+	 */
+	ArchitectureDescription createArchitectureDescription();
+
+	/**
+	 * Returns a new object of class '<em>Architecture</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Architecture</em>'.
+	 * @generated
+	 */
+	Architecture createArchitecture();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -7,6 +7,26 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
+import org.nasdanika.models.togaf.core.Architecture;
+import org.nasdanika.models.togaf.core.ArchitectureBuildingBlock;
+import org.nasdanika.models.togaf.core.ArchitectureDescription;
+import org.nasdanika.models.togaf.core.ArchitectureDomain;
+import org.nasdanika.models.togaf.core.ArchitectureModel;
+import org.nasdanika.models.togaf.core.ArchitectureView;
+import org.nasdanika.models.togaf.core.ArchitectureViewpoint;
+import org.nasdanika.models.togaf.core.ArchitectureWorkProduct;
+import org.nasdanika.models.togaf.core.Artifact;
+import org.nasdanika.models.togaf.core.BuildingBlock;
+import org.nasdanika.models.togaf.core.Concern;
+import org.nasdanika.models.togaf.core.CorePackage;
+import org.nasdanika.models.togaf.core.Deliverable;
+import org.nasdanika.models.togaf.core.Enterprise;
+import org.nasdanika.models.togaf.core.EnterpriseContinuumElement;
+import org.nasdanika.models.togaf.core.ModelKind;
+import org.nasdanika.models.togaf.core.Principle;
+import org.nasdanika.models.togaf.core.SignOff;
+import org.nasdanika.models.togaf.core.SolutionBuidingBlock;
+import org.nasdanika.models.togaf.core.Stakeholder;
 import org.nasdanika.models.togaf.core.*;
 
 /**
@@ -78,12 +98,6 @@ public class CoreSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case CorePackage.STAKEHOLDER: {
-				Stakeholder stakeholder = (Stakeholder)theEObject;
-				T result = caseStakeholder(stakeholder);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case CorePackage.ARCHITECTURE_WORK_PRODUCT: {
 				ArchitectureWorkProduct architectureWorkProduct = (ArchitectureWorkProduct)theEObject;
 				T result = caseArchitectureWorkProduct(architectureWorkProduct);
@@ -101,6 +115,12 @@ public class CoreSwitch<T> extends Switch<T> {
 				Deliverable deliverable = (Deliverable)theEObject;
 				T result = caseDeliverable(deliverable);
 				if (result == null) result = caseArchitectureWorkProduct(deliverable);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.SIGN_OFF: {
+				SignOff signOff = (SignOff)theEObject;
+				T result = caseSignOff(signOff);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -130,6 +150,66 @@ public class CoreSwitch<T> extends Switch<T> {
 			case CorePackage.ENTERPRISE_CONTINUUM_ELEMENT: {
 				EnterpriseContinuumElement enterpriseContinuumElement = (EnterpriseContinuumElement)theEObject;
 				T result = caseEnterpriseContinuumElement(enterpriseContinuumElement);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.PRINCIPLE: {
+				Principle principle = (Principle)theEObject;
+				T result = casePrinciple(principle);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.SYSTEM: {
+				org.nasdanika.models.togaf.core.System system = (org.nasdanika.models.togaf.core.System)theEObject;
+				T result = caseSystem(system);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.ARCHITECTURE_DESCRIPTION: {
+				ArchitectureDescription architectureDescription = (ArchitectureDescription)theEObject;
+				T result = caseArchitectureDescription(architectureDescription);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.ARCHITECTURE: {
+				Architecture architecture = (Architecture)theEObject;
+				T result = caseArchitecture(architecture);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.STAKEHOLDER: {
+				Stakeholder stakeholder = (Stakeholder)theEObject;
+				T result = caseStakeholder(stakeholder);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.CONCERN: {
+				Concern concern = (Concern)theEObject;
+				T result = caseConcern(concern);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.ARCHITECTURE_VIEWPOINT: {
+				ArchitectureViewpoint architectureViewpoint = (ArchitectureViewpoint)theEObject;
+				T result = caseArchitectureViewpoint(architectureViewpoint);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.MODEL_KIND: {
+				ModelKind modelKind = (ModelKind)theEObject;
+				T result = caseModelKind(modelKind);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.ARCHITECTURE_VIEW: {
+				ArchitectureView architectureView = (ArchitectureView)theEObject;
+				T result = caseArchitectureView(architectureView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CorePackage.ARCHITECTURE_MODEL: {
+				ArchitectureModel architectureModel = (ArchitectureModel)theEObject;
+				T result = caseArchitectureModel(architectureModel);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -183,6 +263,81 @@ public class CoreSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Concern</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Concern</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConcern(Concern object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Architecture Viewpoint</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Architecture Viewpoint</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseArchitectureViewpoint(ArchitectureViewpoint object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Model Kind</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Model Kind</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseModelKind(ModelKind object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Architecture View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Architecture View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseArchitectureView(ArchitectureView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Architecture Model</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Architecture Model</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseArchitectureModel(ArchitectureModel object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Architecture Work Product</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -224,6 +379,21 @@ public class CoreSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDeliverable(Deliverable object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sign Off</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sign Off</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSignOff(SignOff object) {
 		return null;
 	}
 
@@ -284,6 +454,66 @@ public class CoreSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseEnterpriseContinuumElement(EnterpriseContinuumElement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Principle</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Principle</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePrinciple(Principle object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>System</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>System</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSystem(org.nasdanika.models.togaf.core.System object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Architecture Description</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Architecture Description</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseArchitectureDescription(ArchitectureDescription object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Architecture</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Architecture</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseArchitecture(Architecture object) {
 		return null;
 	}
 

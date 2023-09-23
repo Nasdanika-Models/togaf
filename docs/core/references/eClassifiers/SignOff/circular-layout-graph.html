@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="EN">
+  <head>
+    <title>Circular Graph</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/themes/default/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.1.0/github-markdown.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.css">
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/dark-head.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/jstree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/components/table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9BRJVLK8CC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9BRJVLK8CC');
+</script>    
+
+<script src="../../../../search-documents.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/olivernn/lunr.js@v2.3.9/lunr.js"></script>
+
+<script>
+// Script for full-text search of JsTree
+
+window.nsdJsTreeSearchCallback = function(str, node) { 
+    var sf = new $.vakata.search(str, true, { caseSensitive : false, fuzzy : false }); 
+    if (sf.search(node.text).isMatch) {
+		return true;
+	} 
+    let searchResult = this.search(str); 
+    for (const sr in searchResult) {
+        if (searchResult[sr].ref === node.original['data-nsd-label-uuid']) {
+            return true;
+        } 
+    } 
+    return false; 
+}.bind(lunr(function () {
+			  this.ref('id');
+			  this.field('title');
+			  this.field('content');
+
+			  for (const key in searchDocuments) {
+				  let doc = searchDocuments[key];
+				this.add({
+					id: doc['action-uuid'],
+					title: doc.title,
+					path: doc.path,
+					content: doc.content
+				});  
+			  }
+			}));
+</script>
+</head>
+  <body>
+    <div tabindex="-1" id="nsd_2ha" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">Hover mouse over nodes elements to display tooltips.
+Double-click on nodes to navigate go documentation.
+Drag to rearrange.
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid nsd-app-container">
+      <div class="row">
+        <div class="col nsd-app-header">
+          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="ed2a2d16-9dbb-4c7d-9554-5b077ab80171" class="nsd-app-header-title">
+            <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon">Nasdanika Models</a>
+          <ul class="nav nsd-app-header-navs">
+            <li class="nav-item">
+              <a href="../../../../search.html" data-nsd-label-uuid="342ec53f-0b07-4da8-9d8c-1278c0c5f894" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+            </li>
+            <li class="nav-item">
+              <a href="../../../../glossary.html" data-nsd-label-uuid="1de23a22-c780-418c-b0c2-6edfc9c1f23f" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-navbar">
+          <ul class="navbar navbar-light navbar-expand-lg">
+            <a href="../../../../index.html" data-nsd-label-uuid="29f534fc-6f22-49fe-aaff-9e55f671c97e" class="navbar-brand"><span class="fa fa-book nsd-app-label-icon"></span>TOGAF Models Documentation</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd_2go" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nsd_2go" class="collapse navbar-collapse"></div>
+          </ul>
+        </div>
+      </div>
+      <div class="row nsd-app-content-row">
+        <div class="col nsd-app-navigation-panel">
+          <div class="card">
+            <div class="card-header">
+              <a href="../../../index.html">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon">core</a>
+            </div>
+            <div class="list-group list-group-flush">
+              <a href="../Architecture/index.html" data-nsd-label-uuid="dd97d04f-53f2-47ce-b906-0621cf60dc64" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Architecture</a>
+              <a href="../ArchitectureBuildingBlock/index.html" title="A reusable named concept, a capability" data-nsd-label-uuid="0a76a62f-b2f0-44c5-ad70-a1f1e3bfea79" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureBuildingBlock</a>
+              <a href="../ArchitectureDescription/index.html" data-nsd-label-uuid="4b82a407-5c8a-4f36-903c-a2af73a1e712" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureDescription</a>
+              <a href="../ArchitectureDomain/index.html" title="Business, Data, Application, Technology (BDAT). There might be more doomains, e.g. security." data-nsd-label-uuid="52aa9649-2a97-4acf-8e87-39ce44e91783" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureDomain</a>
+              <a href="../ArchitectureModel/index.html" data-nsd-label-uuid="d2f196c4-3d88-4d51-bde7-ce10c58a788c" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureModel</a>
+              <a href="../ArchitectureView/index.html" data-nsd-label-uuid="d22f331c-3b88-46f9-a000-1cd6b5660c40" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureView</a>
+              <a href="../ArchitectureViewpoint/index.html" data-nsd-label-uuid="75aa6459-e5bd-4c83-8270-1b396d5d05d0" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureViewpoint</a>
+              <a href="../ArchitectureWorkProduct/index.html" data-nsd-label-uuid="b8948dd2-3bea-4966-b007-6883c5239681" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureWorkProduct</a>
+              <a href="../Artifact/index.html" title="An artifact describes an aspect of architecture. It can be used in multiple deliverables. An artifact can be a catalog, a matrix or a diagram showing some architecture elments and possibly relationships between them." data-nsd-label-uuid="340a03f8-42c2-4c21-890e-e367414343e3" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Artifact</a>
+              <a href="../BuildingBlock/index.html" title="A potentially reusable compoent" data-nsd-label-uuid="9ecd601b-b349-4ff0-895b-c1d67d60ec35" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">BuildingBlock</a>
+              <a href="../Concern/index.html" data-nsd-label-uuid="c5f1e981-1dc8-4e49-bdea-0dd4202d47d4" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Concern</a>
+              <a href="../Deliverable/index.html" title="Deliverables are contractually specified, formally reviewed, approved, and signed off by stakeholders." data-nsd-label-uuid="35760221-4636-4849-ada2-d1f7fd26bc5d" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Deliverable</a>
+              <a href="../Enterprise/index.html" title="Highest level of description for an organization" data-nsd-label-uuid="6bc6d5c7-443f-4607-8334-1522db751062" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Enterprise</a>
+              <a href="../EnterpriseContinuumElement/index.html" title="An element of the enterprise continuum. Examples: Foundation Architectures, Common Systems Archtiectures, Industry Architectures, Organization-Specific Architectures (can be nested)." data-nsd-label-uuid="67eb7087-49d1-4da4-95fc-1b0fed34944d" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">EnterpriseContinuumElement</a>
+              <a href="../ModelKind/index.html" data-nsd-label-uuid="62bdc741-ec14-49a1-bc4a-dae4749964b6" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ModelKind</a>
+              <a href="../Principle/index.html" data-nsd-label-uuid="527ad2bd-92db-4aa8-b7e4-9fcf724ce78b" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Principle</a>
+              <a href="index.html" data-nsd-label-uuid="d91e634d-5043-410a-aaf0-7560951b16e4" class="list-group-item list-group-action active">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">SignOff</a>
+              <a href="../SolutionBuidingBlock/index.html" title="Implementation of a capability" data-nsd-label-uuid="08ec09a1-1cc6-4587-9031-db2de6083725" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">SolutionBuidingBlock</a>
+              <a href="../Stakeholder/index.html" data-nsd-label-uuid="8a7cdccd-3e28-4351-82c9-9e43cb09cb63" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Stakeholder</a>
+              <a href="../System/index.html" data-nsd-label-uuid="20f35bb8-127e-4eab-a617-a85243611720" class="list-group-item list-group-action">
+                <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">System</a>
+            </div>
+          </div>
+        </div>
+        <div data-nsd-label-uuid="f3dcf2f6-d4de-43bb-a855-2546c3459064" data-nsd-action-uris="uuid:f3dcf2f6-d4de-43bb-a855-2546c3459064" class="col nsd-app-content-panel">
+          <div class="container-fluid">
+            <div class="row nsd-app-content-panel-breadcrumb-row">
+              <div class="col">
+                <nav aria-label="breadcrumb" class="nsd-app-content-panel-breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="../../../index.html" data-nsd-label-uuid="bdf2d7c8-249c-41f0-8114-f48f33f7d4d5">
+                        <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon">core</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="index.html" data-nsd-label-uuid="d91e634d-5043-410a-aaf0-7560951b16e4">
+                        <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">SignOff</a>
+                    </li>
+                    <li class="breadcrumb-item"><span data-nsd-label-uuid="92c7bd0d-3d18-459e-ba0b-b0a30c75eba9"><img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon">Graphs</span>
+                    </li>
+                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="f3dcf2f6-d4de-43bb-a855-2546c3459064">Circular Graph</span>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <div class="row nsd-app-content-panel-title-and-items-row">
+              <div class="col-auto">
+                <h1><span data-nsd-label-uuid="f3dcf2f6-d4de-43bb-a855-2546c3459064" class="nsd-app-content-panel-title">Circular Graph<a data-toggle="modal" data-target="#nsd_2ha" href="#" title="A circular layout graph of this classifier and related classifiers showing relationships between them" style="vertical-align:super;font-size:x-small;margin-left:0.2em"><span class="far fa-question-circle nsd-app-label-icon"></span></a></span>
+                </h1>
+              </div>
+            </div>
+            <div class="row nsd-app-content-panel-content-row">
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col"><div id="graph-container-5" class="row" style="height:80vh;width:100%">
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var dom = document.getElementById("graph-container-5");
+		var myChart = echarts.init(dom, null, {
+			render: "canvas",
+			useDirtyRect: false
+		});
+		var option = {"series":[{"type":"graph","emphasis":{"focus":"adjacency"},"data":[{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","name":"SignOff","value":{"externalLink":""},"x":283.78065759868474,"y":683.1503566825578,"category":0}],"symbolSize":16,"roam":true,"layout":"circular","categories":[{"name":"core"}],"draggable":true,"label":{"show":true,"position":"right"},"lineStyle":{"color":"source","curveness":0.3},"circular":{"rotateLabel":true}}]};
+		option.tooltip = {};
+		option.series[0].tooltip = {
+			formatter: function(arg) {
+				return arg.value ? arg.value.description : null;
+			}
+		};
+		myChart.setOption(option);
+		myChart.on("dblclick", function(params) {
+			if (params.value) {
+				if (params.value.link) {
+					window.open(params.value.link, "_self");
+				} else if (params.value.externalLink) {
+					window.open(params.value.externalLink);
+				}
+			}
+		});
+		window.addEventListener("resize", myChart.resize);
+	});
+
+</script>
+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-footer">
+          <ul class="nav nsd-app-footer-navs">
+            <li class="nav-item">
+              <a href="https://github.com/Nasdanika-Models/togaf" data-nsd-label-uuid="c94d807c-4620-449d-933e-b4c85fb5ace4" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Sources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

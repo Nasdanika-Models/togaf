@@ -43,7 +43,7 @@ public interface Deliverable extends ArchitectureWorkProduct {
 
 	/**
 	 * Returns the value of the '<em><b>Signoffs</b></em>' reference list.
-	 * The list contents are of type {@link org.nasdanika.models.togaf.core.Stakeholder}.
+	 * The list contents are of type {@link org.nasdanika.models.togaf.core.SignOff}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -51,9 +51,9 @@ public interface Deliverable extends ArchitectureWorkProduct {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Signoffs</em>' reference list.
 	 * @see org.nasdanika.models.togaf.core.CorePackage#getDeliverable_Signoffs()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
-	EList<Stakeholder> getSignoffs();
+	EList<SignOff> getSignoffs();
 
 } // Deliverable

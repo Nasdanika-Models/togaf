@@ -129,25 +129,57 @@ public interface CorePackage extends EPackage {
 	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getStakeholder()
 	 * @generated
 	 */
-	int STAKEHOLDER = 2;
+	int STAKEHOLDER = 14;
 
 	/**
-	 * The number of structural features of the '<em>Stakeholder</em>' class.
+	 * The meta object id for the '{@link org.nasdanika.models.togaf.core.impl.ConcernImpl <em>Concern</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.togaf.core.impl.ConcernImpl
+	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getConcern()
 	 * @generated
-	 * @ordered
 	 */
-	int STAKEHOLDER_FEATURE_COUNT = 0;
+	int CONCERN = 15;
 
 	/**
-	 * The number of operations of the '<em>Stakeholder</em>' class.
+	 * The meta object id for the '{@link org.nasdanika.models.togaf.core.impl.ArchitectureViewpointImpl <em>Architecture Viewpoint</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.togaf.core.impl.ArchitectureViewpointImpl
+	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getArchitectureViewpoint()
 	 * @generated
-	 * @ordered
 	 */
-	int STAKEHOLDER_OPERATION_COUNT = 0;
+	int ARCHITECTURE_VIEWPOINT = 16;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.togaf.core.impl.ModelKindImpl <em>Model Kind</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.togaf.core.impl.ModelKindImpl
+	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getModelKind()
+	 * @generated
+	 */
+	int MODEL_KIND = 17;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.togaf.core.impl.ArchitectureViewImpl <em>Architecture View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.togaf.core.impl.ArchitectureViewImpl
+	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getArchitectureView()
+	 * @generated
+	 */
+	int ARCHITECTURE_VIEW = 18;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.togaf.core.impl.ArchitectureModelImpl <em>Architecture Model</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.togaf.core.impl.ArchitectureModelImpl
+	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getArchitectureModel()
+	 * @generated
+	 */
+	int ARCHITECTURE_MODEL = 19;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.togaf.core.impl.ArchitectureWorkProductImpl <em>Architecture Work Product</em>}' class.
@@ -157,7 +189,7 @@ public interface CorePackage extends EPackage {
 	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getArchitectureWorkProduct()
 	 * @generated
 	 */
-	int ARCHITECTURE_WORK_PRODUCT = 3;
+	int ARCHITECTURE_WORK_PRODUCT = 2;
 
 	/**
 	 * The number of structural features of the '<em>Architecture Work Product</em>' class.
@@ -185,7 +217,7 @@ public interface CorePackage extends EPackage {
 	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getArtifact()
 	 * @generated
 	 */
-	int ARTIFACT = 4;
+	int ARTIFACT = 3;
 
 	/**
 	 * The number of structural features of the '<em>Artifact</em>' class.
@@ -213,7 +245,7 @@ public interface CorePackage extends EPackage {
 	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getDeliverable()
 	 * @generated
 	 */
-	int DELIVERABLE = 5;
+	int DELIVERABLE = 4;
 
 	/**
 	 * The feature id for the '<em><b>Uses</b></em>' reference list.
@@ -250,6 +282,34 @@ public interface CorePackage extends EPackage {
 	 * @ordered
 	 */
 	int DELIVERABLE_OPERATION_COUNT = ARCHITECTURE_WORK_PRODUCT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.togaf.core.impl.SignOffImpl <em>Sign Off</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.togaf.core.impl.SignOffImpl
+	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getSignOff()
+	 * @generated
+	 */
+	int SIGN_OFF = 5;
+
+	/**
+	 * The number of structural features of the '<em>Sign Off</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGN_OFF_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Sign Off</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGN_OFF_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.togaf.core.impl.BuildingBlockImpl <em>Building Block</em>}' class.
@@ -428,6 +488,362 @@ public interface CorePackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link org.nasdanika.models.togaf.core.impl.PrincipleImpl <em>Principle</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.togaf.core.impl.PrincipleImpl
+	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getPrinciple()
+	 * @generated
+	 */
+	int PRINCIPLE = 10;
+
+	/**
+	 * The number of structural features of the '<em>Principle</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINCIPLE_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Principle</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINCIPLE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.togaf.core.impl.SystemImpl <em>System</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.togaf.core.impl.SystemImpl
+	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getSystem()
+	 * @generated
+	 */
+	int SYSTEM = 11;
+
+	/**
+	 * The feature id for the '<em><b>Exhibits</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__EXHIBITS = 0;
+
+	/**
+	 * The number of structural features of the '<em>System</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>System</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.togaf.core.impl.ArchitectureDescriptionImpl <em>Architecture Description</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.togaf.core.impl.ArchitectureDescriptionImpl
+	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getArchitectureDescription()
+	 * @generated
+	 */
+	int ARCHITECTURE_DESCRIPTION = 12;
+
+	/**
+	 * The feature id for the '<em><b>Expresses</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_DESCRIPTION__EXPRESSES = 0;
+
+	/**
+	 * The feature id for the '<em><b>Identifies System</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_DESCRIPTION__IDENTIFIES_SYSTEM = 1;
+
+	/**
+	 * The feature id for the '<em><b>Identifies Stakeholders</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_DESCRIPTION__IDENTIFIES_STAKEHOLDERS = 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifies Concerns</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_DESCRIPTION__IDENTIFIES_CONCERNS = 3;
+
+	/**
+	 * The feature id for the '<em><b>View Points</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_DESCRIPTION__VIEW_POINTS = 4;
+
+	/**
+	 * The feature id for the '<em><b>Views</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_DESCRIPTION__VIEWS = 5;
+
+	/**
+	 * The number of structural features of the '<em>Architecture Description</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_DESCRIPTION_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Architecture Description</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_DESCRIPTION_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.togaf.core.impl.ArchitectureImpl <em>Architecture</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.togaf.core.impl.ArchitectureImpl
+	 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getArchitecture()
+	 * @generated
+	 */
+	int ARCHITECTURE = 13;
+
+	/**
+	 * The number of structural features of the '<em>Architecture</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Architecture</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_OPERATION_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Has Interest In</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STAKEHOLDER__HAS_INTEREST_IN = 0;
+
+	/**
+	 * The feature id for the '<em><b>Has</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STAKEHOLDER__HAS = 1;
+
+	/**
+	 * The number of structural features of the '<em>Stakeholder</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STAKEHOLDER_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Stakeholder</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STAKEHOLDER_OPERATION_COUNT = 0;
+
+	/**
+	 * The number of structural features of the '<em>Concern</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONCERN_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Concern</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONCERN_OPERATION_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Frames</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_VIEWPOINT__FRAMES = 0;
+
+	/**
+	 * The feature id for the '<em><b>Governs</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_VIEWPOINT__GOVERNS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Model Kinds</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_VIEWPOINT__MODEL_KINDS = 2;
+
+	/**
+	 * The number of structural features of the '<em>Architecture Viewpoint</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_VIEWPOINT_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Architecture Viewpoint</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_VIEWPOINT_OPERATION_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Governs</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_KIND__GOVERNS = 0;
+
+	/**
+	 * The number of structural features of the '<em>Model Kind</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_KIND_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Model Kind</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_KIND_OPERATION_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Addresses</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_VIEW__ADDRESSES = 0;
+
+	/**
+	 * The feature id for the '<em><b>Models</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_VIEW__MODELS = 1;
+
+	/**
+	 * The number of structural features of the '<em>Architecture View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_VIEW_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Architecture View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_VIEW_OPERATION_COUNT = 0;
+
+	/**
+	 * The number of structural features of the '<em>Architecture Model</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_MODEL_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Architecture Model</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARCHITECTURE_MODEL_OPERATION_COUNT = 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.togaf.core.Enterprise <em>Enterprise</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -467,6 +883,144 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getStakeholder();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.togaf.core.Stakeholder#getHasInterestIn <em>Has Interest In</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Has Interest In</em>'.
+	 * @see org.nasdanika.models.togaf.core.Stakeholder#getHasInterestIn()
+	 * @see #getStakeholder()
+	 * @generated
+	 */
+	EReference getStakeholder_HasInterestIn();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.togaf.core.Stakeholder#getHas <em>Has</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Has</em>'.
+	 * @see org.nasdanika.models.togaf.core.Stakeholder#getHas()
+	 * @see #getStakeholder()
+	 * @generated
+	 */
+	EReference getStakeholder_Has();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.togaf.core.Concern <em>Concern</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Concern</em>'.
+	 * @see org.nasdanika.models.togaf.core.Concern
+	 * @generated
+	 */
+	EClass getConcern();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.togaf.core.ArchitectureViewpoint <em>Architecture Viewpoint</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Architecture Viewpoint</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureViewpoint
+	 * @generated
+	 */
+	EClass getArchitectureViewpoint();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.togaf.core.ArchitectureViewpoint#getFrames <em>Frames</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Frames</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureViewpoint#getFrames()
+	 * @see #getArchitectureViewpoint()
+	 * @generated
+	 */
+	EReference getArchitectureViewpoint_Frames();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.togaf.core.ArchitectureViewpoint#getGoverns <em>Governs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Governs</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureViewpoint#getGoverns()
+	 * @see #getArchitectureViewpoint()
+	 * @generated
+	 */
+	EReference getArchitectureViewpoint_Governs();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.togaf.core.ArchitectureViewpoint#getModelKinds <em>Model Kinds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Model Kinds</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureViewpoint#getModelKinds()
+	 * @see #getArchitectureViewpoint()
+	 * @generated
+	 */
+	EReference getArchitectureViewpoint_ModelKinds();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.togaf.core.ModelKind <em>Model Kind</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Model Kind</em>'.
+	 * @see org.nasdanika.models.togaf.core.ModelKind
+	 * @generated
+	 */
+	EClass getModelKind();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.togaf.core.ModelKind#getGoverns <em>Governs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Governs</em>'.
+	 * @see org.nasdanika.models.togaf.core.ModelKind#getGoverns()
+	 * @see #getModelKind()
+	 * @generated
+	 */
+	EReference getModelKind_Governs();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.togaf.core.ArchitectureView <em>Architecture View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Architecture View</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureView
+	 * @generated
+	 */
+	EClass getArchitectureView();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.togaf.core.ArchitectureView#getAddresses <em>Addresses</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Addresses</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureView#getAddresses()
+	 * @see #getArchitectureView()
+	 * @generated
+	 */
+	EReference getArchitectureView_Addresses();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.togaf.core.ArchitectureView#getModels <em>Models</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Models</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureView#getModels()
+	 * @see #getArchitectureView()
+	 * @generated
+	 */
+	EReference getArchitectureView_Models();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.togaf.core.ArchitectureModel <em>Architecture Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Architecture Model</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureModel
+	 * @generated
+	 */
+	EClass getArchitectureModel();
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.togaf.core.ArchitectureWorkProduct <em>Architecture Work Product</em>}'.
@@ -519,6 +1073,16 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDeliverable_Signoffs();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.togaf.core.SignOff <em>Sign Off</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sign Off</em>'.
+	 * @see org.nasdanika.models.togaf.core.SignOff
+	 * @generated
+	 */
+	EClass getSignOff();
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.togaf.core.BuildingBlock <em>Building Block</em>}'.
@@ -616,6 +1180,123 @@ public interface CorePackage extends EPackage {
 	EReference getEnterpriseContinuumElement_SolutionBuildingBlocks();
 
 	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.togaf.core.Principle <em>Principle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Principle</em>'.
+	 * @see org.nasdanika.models.togaf.core.Principle
+	 * @generated
+	 */
+	EClass getPrinciple();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.togaf.core.System <em>System</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>System</em>'.
+	 * @see org.nasdanika.models.togaf.core.System
+	 * @generated
+	 */
+	EClass getSystem();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.togaf.core.System#getExhibits <em>Exhibits</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Exhibits</em>'.
+	 * @see org.nasdanika.models.togaf.core.System#getExhibits()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Exhibits();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.togaf.core.ArchitectureDescription <em>Architecture Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Architecture Description</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureDescription
+	 * @generated
+	 */
+	EClass getArchitectureDescription();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.togaf.core.ArchitectureDescription#getExpresses <em>Expresses</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Expresses</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureDescription#getExpresses()
+	 * @see #getArchitectureDescription()
+	 * @generated
+	 */
+	EReference getArchitectureDescription_Expresses();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.togaf.core.ArchitectureDescription#getIdentifiesSystem <em>Identifies System</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Identifies System</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureDescription#getIdentifiesSystem()
+	 * @see #getArchitectureDescription()
+	 * @generated
+	 */
+	EReference getArchitectureDescription_IdentifiesSystem();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.togaf.core.ArchitectureDescription#getIdentifiesStakeholders <em>Identifies Stakeholders</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Identifies Stakeholders</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureDescription#getIdentifiesStakeholders()
+	 * @see #getArchitectureDescription()
+	 * @generated
+	 */
+	EReference getArchitectureDescription_IdentifiesStakeholders();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.togaf.core.ArchitectureDescription#getIdentifiesConcerns <em>Identifies Concerns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Identifies Concerns</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureDescription#getIdentifiesConcerns()
+	 * @see #getArchitectureDescription()
+	 * @generated
+	 */
+	EReference getArchitectureDescription_IdentifiesConcerns();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.togaf.core.ArchitectureDescription#getViewPoints <em>View Points</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>View Points</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureDescription#getViewPoints()
+	 * @see #getArchitectureDescription()
+	 * @generated
+	 */
+	EReference getArchitectureDescription_ViewPoints();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.togaf.core.ArchitectureDescription#getViews <em>Views</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Views</em>'.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureDescription#getViews()
+	 * @see #getArchitectureDescription()
+	 * @generated
+	 */
+	EReference getArchitectureDescription_Views();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.togaf.core.Architecture <em>Architecture</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Architecture</em>'.
+	 * @see org.nasdanika.models.togaf.core.Architecture
+	 * @generated
+	 */
+	EClass getArchitecture();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -673,6 +1354,107 @@ public interface CorePackage extends EPackage {
 		 */
 		EClass STAKEHOLDER = eINSTANCE.getStakeholder();
 		/**
+		 * The meta object literal for the '<em><b>Has Interest In</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STAKEHOLDER__HAS_INTEREST_IN = eINSTANCE.getStakeholder_HasInterestIn();
+		/**
+		 * The meta object literal for the '<em><b>Has</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STAKEHOLDER__HAS = eINSTANCE.getStakeholder_Has();
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.togaf.core.impl.ConcernImpl <em>Concern</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.togaf.core.impl.ConcernImpl
+		 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getConcern()
+		 * @generated
+		 */
+		EClass CONCERN = eINSTANCE.getConcern();
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.togaf.core.impl.ArchitectureViewpointImpl <em>Architecture Viewpoint</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.togaf.core.impl.ArchitectureViewpointImpl
+		 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getArchitectureViewpoint()
+		 * @generated
+		 */
+		EClass ARCHITECTURE_VIEWPOINT = eINSTANCE.getArchitectureViewpoint();
+		/**
+		 * The meta object literal for the '<em><b>Frames</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARCHITECTURE_VIEWPOINT__FRAMES = eINSTANCE.getArchitectureViewpoint_Frames();
+		/**
+		 * The meta object literal for the '<em><b>Governs</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARCHITECTURE_VIEWPOINT__GOVERNS = eINSTANCE.getArchitectureViewpoint_Governs();
+		/**
+		 * The meta object literal for the '<em><b>Model Kinds</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARCHITECTURE_VIEWPOINT__MODEL_KINDS = eINSTANCE.getArchitectureViewpoint_ModelKinds();
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.togaf.core.impl.ModelKindImpl <em>Model Kind</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.togaf.core.impl.ModelKindImpl
+		 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getModelKind()
+		 * @generated
+		 */
+		EClass MODEL_KIND = eINSTANCE.getModelKind();
+		/**
+		 * The meta object literal for the '<em><b>Governs</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MODEL_KIND__GOVERNS = eINSTANCE.getModelKind_Governs();
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.togaf.core.impl.ArchitectureViewImpl <em>Architecture View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.togaf.core.impl.ArchitectureViewImpl
+		 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getArchitectureView()
+		 * @generated
+		 */
+		EClass ARCHITECTURE_VIEW = eINSTANCE.getArchitectureView();
+		/**
+		 * The meta object literal for the '<em><b>Addresses</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARCHITECTURE_VIEW__ADDRESSES = eINSTANCE.getArchitectureView_Addresses();
+		/**
+		 * The meta object literal for the '<em><b>Models</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARCHITECTURE_VIEW__MODELS = eINSTANCE.getArchitectureView_Models();
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.togaf.core.impl.ArchitectureModelImpl <em>Architecture Model</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.togaf.core.impl.ArchitectureModelImpl
+		 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getArchitectureModel()
+		 * @generated
+		 */
+		EClass ARCHITECTURE_MODEL = eINSTANCE.getArchitectureModel();
+		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.togaf.core.impl.ArchitectureWorkProductImpl <em>Architecture Work Product</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -713,6 +1495,15 @@ public interface CorePackage extends EPackage {
 		 * @generated
 		 */
 		EReference DELIVERABLE__SIGNOFFS = eINSTANCE.getDeliverable_Signoffs();
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.togaf.core.impl.SignOffImpl <em>Sign Off</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.togaf.core.impl.SignOffImpl
+		 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getSignOff()
+		 * @generated
+		 */
+		EClass SIGN_OFF = eINSTANCE.getSignOff();
 		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.togaf.core.impl.BuildingBlockImpl <em>Building Block</em>}' class.
 		 * <!-- begin-user-doc -->
@@ -784,6 +1575,91 @@ public interface CorePackage extends EPackage {
 		 * @generated
 		 */
 		EReference ENTERPRISE_CONTINUUM_ELEMENT__SOLUTION_BUILDING_BLOCKS = eINSTANCE.getEnterpriseContinuumElement_SolutionBuildingBlocks();
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.togaf.core.impl.PrincipleImpl <em>Principle</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.togaf.core.impl.PrincipleImpl
+		 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getPrinciple()
+		 * @generated
+		 */
+		EClass PRINCIPLE = eINSTANCE.getPrinciple();
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.togaf.core.impl.SystemImpl <em>System</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.togaf.core.impl.SystemImpl
+		 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getSystem()
+		 * @generated
+		 */
+		EClass SYSTEM = eINSTANCE.getSystem();
+		/**
+		 * The meta object literal for the '<em><b>Exhibits</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__EXHIBITS = eINSTANCE.getSystem_Exhibits();
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.togaf.core.impl.ArchitectureDescriptionImpl <em>Architecture Description</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.togaf.core.impl.ArchitectureDescriptionImpl
+		 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getArchitectureDescription()
+		 * @generated
+		 */
+		EClass ARCHITECTURE_DESCRIPTION = eINSTANCE.getArchitectureDescription();
+		/**
+		 * The meta object literal for the '<em><b>Expresses</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARCHITECTURE_DESCRIPTION__EXPRESSES = eINSTANCE.getArchitectureDescription_Expresses();
+		/**
+		 * The meta object literal for the '<em><b>Identifies System</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARCHITECTURE_DESCRIPTION__IDENTIFIES_SYSTEM = eINSTANCE.getArchitectureDescription_IdentifiesSystem();
+		/**
+		 * The meta object literal for the '<em><b>Identifies Stakeholders</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARCHITECTURE_DESCRIPTION__IDENTIFIES_STAKEHOLDERS = eINSTANCE.getArchitectureDescription_IdentifiesStakeholders();
+		/**
+		 * The meta object literal for the '<em><b>Identifies Concerns</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARCHITECTURE_DESCRIPTION__IDENTIFIES_CONCERNS = eINSTANCE.getArchitectureDescription_IdentifiesConcerns();
+		/**
+		 * The meta object literal for the '<em><b>View Points</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARCHITECTURE_DESCRIPTION__VIEW_POINTS = eINSTANCE.getArchitectureDescription_ViewPoints();
+		/**
+		 * The meta object literal for the '<em><b>Views</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ARCHITECTURE_DESCRIPTION__VIEWS = eINSTANCE.getArchitectureDescription_Views();
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.togaf.core.impl.ArchitectureImpl <em>Architecture</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.togaf.core.impl.ArchitectureImpl
+		 * @see org.nasdanika.models.togaf.core.impl.CorePackageImpl#getArchitecture()
+		 * @generated
+		 */
+		EClass ARCHITECTURE = eINSTANCE.getArchitecture();
 
 	}
 

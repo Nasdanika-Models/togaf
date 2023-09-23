@@ -9,6 +9,26 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.nasdanika.models.togaf.core.Architecture;
+import org.nasdanika.models.togaf.core.ArchitectureBuildingBlock;
+import org.nasdanika.models.togaf.core.ArchitectureDescription;
+import org.nasdanika.models.togaf.core.ArchitectureDomain;
+import org.nasdanika.models.togaf.core.ArchitectureModel;
+import org.nasdanika.models.togaf.core.ArchitectureView;
+import org.nasdanika.models.togaf.core.ArchitectureViewpoint;
+import org.nasdanika.models.togaf.core.ArchitectureWorkProduct;
+import org.nasdanika.models.togaf.core.Artifact;
+import org.nasdanika.models.togaf.core.BuildingBlock;
+import org.nasdanika.models.togaf.core.Concern;
+import org.nasdanika.models.togaf.core.CorePackage;
+import org.nasdanika.models.togaf.core.Deliverable;
+import org.nasdanika.models.togaf.core.Enterprise;
+import org.nasdanika.models.togaf.core.EnterpriseContinuumElement;
+import org.nasdanika.models.togaf.core.ModelKind;
+import org.nasdanika.models.togaf.core.Principle;
+import org.nasdanika.models.togaf.core.SignOff;
+import org.nasdanika.models.togaf.core.SolutionBuidingBlock;
+import org.nasdanika.models.togaf.core.Stakeholder;
 import org.nasdanika.models.togaf.core.*;
 
 /**
@@ -76,10 +96,6 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 				return createArchitectureDomainAdapter();
 			}
 			@Override
-			public Adapter caseStakeholder(Stakeholder object) {
-				return createStakeholderAdapter();
-			}
-			@Override
 			public Adapter caseArchitectureWorkProduct(ArchitectureWorkProduct object) {
 				return createArchitectureWorkProductAdapter();
 			}
@@ -90,6 +106,10 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseDeliverable(Deliverable object) {
 				return createDeliverableAdapter();
+			}
+			@Override
+			public Adapter caseSignOff(SignOff object) {
+				return createSignOffAdapter();
 			}
 			@Override
 			public Adapter caseBuildingBlock(BuildingBlock object) {
@@ -106,6 +126,46 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseEnterpriseContinuumElement(EnterpriseContinuumElement object) {
 				return createEnterpriseContinuumElementAdapter();
+			}
+			@Override
+			public Adapter casePrinciple(Principle object) {
+				return createPrincipleAdapter();
+			}
+			@Override
+			public Adapter caseSystem(org.nasdanika.models.togaf.core.System object) {
+				return createSystemAdapter();
+			}
+			@Override
+			public Adapter caseArchitectureDescription(ArchitectureDescription object) {
+				return createArchitectureDescriptionAdapter();
+			}
+			@Override
+			public Adapter caseArchitecture(Architecture object) {
+				return createArchitectureAdapter();
+			}
+			@Override
+			public Adapter caseStakeholder(Stakeholder object) {
+				return createStakeholderAdapter();
+			}
+			@Override
+			public Adapter caseConcern(Concern object) {
+				return createConcernAdapter();
+			}
+			@Override
+			public Adapter caseArchitectureViewpoint(ArchitectureViewpoint object) {
+				return createArchitectureViewpointAdapter();
+			}
+			@Override
+			public Adapter caseModelKind(ModelKind object) {
+				return createModelKindAdapter();
+			}
+			@Override
+			public Adapter caseArchitectureView(ArchitectureView object) {
+				return createArchitectureViewAdapter();
+			}
+			@Override
+			public Adapter caseArchitectureModel(ArchitectureModel object) {
+				return createArchitectureModelAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -170,6 +230,76 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.togaf.core.Concern <em>Concern</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.togaf.core.Concern
+	 * @generated
+	 */
+	public Adapter createConcernAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.togaf.core.ArchitectureViewpoint <em>Architecture Viewpoint</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureViewpoint
+	 * @generated
+	 */
+	public Adapter createArchitectureViewpointAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.togaf.core.ModelKind <em>Model Kind</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.togaf.core.ModelKind
+	 * @generated
+	 */
+	public Adapter createModelKindAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.togaf.core.ArchitectureView <em>Architecture View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureView
+	 * @generated
+	 */
+	public Adapter createArchitectureViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.togaf.core.ArchitectureModel <em>Architecture Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureModel
+	 * @generated
+	 */
+	public Adapter createArchitectureModelAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.togaf.core.ArchitectureWorkProduct <em>Architecture Work Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -208,6 +338,20 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDeliverableAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.togaf.core.SignOff <em>Sign Off</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.togaf.core.SignOff
+	 * @generated
+	 */
+	public Adapter createSignOffAdapter() {
 		return null;
 	}
 
@@ -264,6 +408,62 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEnterpriseContinuumElementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.togaf.core.Principle <em>Principle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.togaf.core.Principle
+	 * @generated
+	 */
+	public Adapter createPrincipleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.togaf.core.System <em>System</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.togaf.core.System
+	 * @generated
+	 */
+	public Adapter createSystemAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.togaf.core.ArchitectureDescription <em>Architecture Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.togaf.core.ArchitectureDescription
+	 * @generated
+	 */
+	public Adapter createArchitectureDescriptionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.togaf.core.Architecture <em>Architecture</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.togaf.core.Architecture
+	 * @generated
+	 */
+	public Adapter createArchitectureAdapter() {
 		return null;
 	}
 

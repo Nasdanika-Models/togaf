@@ -17,7 +17,6 @@
       <details key="documentation" value="Business, Data, Application, Technology (BDAT). There might be more doomains, e.g. security."/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Stakeholder"/>
   <eClassifiers xsi:type="ecore:EClass" name="ArchitectureWorkProduct"/>
   <eClassifiers xsi:type="ecore:EClass" name="Artifact" eSuperTypes="#//ArchitectureWorkProduct">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -33,13 +32,14 @@
         <details key="documentation" value="A deliverable can use/reference zero or more artifacts. TODO: Derived opposite from artifacts to deliverables. Association class with a key and perhaps configuration/properties - an artifact can be a &quot;template&quot; or a pattern and its use is instantiation with given &quot;bindings&quot;"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="signoffs" upperBound="-1"
-        eType="#//Stakeholder">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signoffs" lowerBound="1"
+        upperBound="-1" eType="#//SignOff">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Tracking of stakeholder interactions. TODO: a better name for the reference which is a generic for review/approval/signoff. A base association class and subclasses - Review, Approval, Signoff. Dates, comments etc for each."/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SignOff"/>
   <eClassifiers xsi:type="ecore:EClass" name="BuildingBlock" eSuperTypes="#//ArchitectureWorkProduct">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A potentially reusable compoent"/>
@@ -83,4 +83,62 @@
         upperBound="-1" eType="#//ArchitectureBuildingBlock" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Principle"/>
+  <eClassifiers xsi:type="ecore:EClass" name="System">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="exhibits" eType="#//Architecture">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A System exibits Architecture"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArchitectureDescription">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expresses" eType="#//Architecture">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An ArchitectureDescription expresses Architecture"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="identifiesSystem" lowerBound="1"
+        eType="#//System">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An ArchitectureDescription identifies System"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="identifiesStakeholders"
+        lowerBound="1" upperBound="-1" eType="#//Stakeholder">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An ArchitectureDescription identifies System"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="identifiesConcerns" lowerBound="1"
+        upperBound="-1" eType="#//Concern">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An ArchitectureDescription identifies System"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="viewPoints" lowerBound="1"
+        upperBound="-1" eType="#//ArchitectureViewpoint"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="views" lowerBound="1" upperBound="-1"
+        eType="#//ArchitectureView"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Architecture"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Stakeholder">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasInterestIn" eType="#//System"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has" upperBound="-1" eType="#//Concern"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Concern"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ArchitectureViewpoint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="frames" upperBound="-1"
+        eType="#//Concern"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="governs" eType="#//ArchitectureView"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modelKinds" lowerBound="1"
+        upperBound="-1" eType="#//ModelKind"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelKind">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="governs" eType="#//ArchitectureModel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArchitectureView">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="addresses" eType="#//Concern"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="models" lowerBound="1"
+        upperBound="-1" eType="#//ArchitectureModel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArchitectureModel"/>
 </ecore:EPackage>
